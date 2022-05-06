@@ -15,5 +15,5 @@ public class BaseMeal {
         this.nameFood = nameFood;
     }
 
-    public float calculatePortion(Person person){return 0;}
+    public float calculatePortion(MealRecipe personPrototype){return 0;}
 }

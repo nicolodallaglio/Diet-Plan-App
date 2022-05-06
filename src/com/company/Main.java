@@ -3,9 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Person person = new Person("mimmo", 50, (float) 1.8, 60, true,true);
+        SportyWomen person = new SportyWomen("mimma", 70, (float) 1.8, 60);
         person.showData();
-        float bmi = person.BmiCalculated();
+        float bmi;
+        bmi = person.BmiCalculated();
         person.bodyFatSituation((int) bmi);
         Fat fat = new Fat(null);
         carbohydrates carbohydrates = new carbohydrates(null);

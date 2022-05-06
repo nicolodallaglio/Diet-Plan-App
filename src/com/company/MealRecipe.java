@@ -1,12 +1,11 @@
 package com.company;
 
-public class MealRecipe extends Person{
+public class MealRecipe {
     private Protein protein;
     private Fat fat;
     private carbohydrates carbohydrates;
 
-    public MealRecipe(String name, int weight, float height, int age, boolean male, boolean sporty, Protein protein, Fat fat, com.company.carbohydrates carbohydrates) {
-        super(name, weight, height, age, male, sporty);
+    public MealRecipe(Protein protein, carbohydrates carbohydrates,Fat fat) {
         this.protein = protein;
         this.fat = fat;
         this.carbohydrates = carbohydrates;
@@ -24,10 +23,38 @@ public class MealRecipe extends Person{
         return fat;
     }
 
-    public void showPricipleMeal(){
+    public void PricipleMeal(PersonPrototype personPrototype){
         System.out.println("\npasto principale:");
-        fat.calculatePortion(this);
-        carbohydrates.calculatePortion(this, (int) this.BmiCalculated());
-        protein.calculatePortion(this, (int) this.BmiCalculated());
+        fat.calculatePortion(personPrototype);
+        carbohydrates.calculatePortion(personPrototype);
+        protein.calculatePortion(personPrototype);
+    }
+
+    public void PricipleMeal(WomenPerson personPrototype){
+        System.out.println("\npasto principale per woman:");
+        fat.calculatePortion(personPrototype);
+        carbohydrates.calculatePortion(personPrototype);
+        protein.calculatePortion(personPrototype);
+    }
+
+    public void PricipleMeal(SportyWomen personPrototype){
+        System.out.println("\npasto principale per sporty woman:");
+        fat.calculatePortion(personPrototype);
+        carbohydrates.calculatePortion(personPrototype);
+        protein.calculatePortion(personPrototype);
+    }
+
+    public void PricipleMeal(MenPerson personPrototype){
+        System.out.println("\npasto principale per men:");
+        fat.calculatePortion(personPrototype);
+        carbohydrates.calculatePortion(personPrototype);
+        protein.calculatePortion(personPrototype);
+    }
+
+    public void PricipleMeal(SportyMen personPrototype){
+        System.out.println("\npasto principale per sporty men:");
+        fat.calculatePortion(personPrototype);
+        carbohydrates.calculatePortion(personPrototype);
+        protein.calculatePortion(personPrototype);
     }
 }
