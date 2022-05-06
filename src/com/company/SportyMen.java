@@ -1,8 +1,18 @@
 package com.company;
 
 public class SportyMen extends PersonPrototype{
-    public SportyMen(String name, int weight, float height, int age) {
+    private boolean useProtein;
+    public SportyMen(String name, int weight, float height, int age, boolean useProtein) {
         super(name, weight, height, age);
+        this.useProtein = useProtein;
+    }
+
+    public boolean isUseProtein() {
+        return useProtein;
+    }
+
+    public void setUseProtein(boolean useProtein) {
+        this.useProtein = useProtein;
     }
 
     @Override
@@ -60,19 +70,29 @@ public class SportyMen extends PersonPrototype{
         super.bodyFatSituation(bmi);
     }
 
+    public void foodForGym(){
+        SportyFood sportyFood = new SportyFood();
+        if (useProtein){
+            sportyFood.proteinPreAndPost();
+        }else{
+            sportyFood.chooseFoodPreWorkout();
+            sportyFood.chooseFoodPostWorkout();
+        }
+    }
+
     @Override
     public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
-        for (int i = 0; i < 7; i++) {
-            System.out.println("\ngiorno " + (i + 1) + " della dieta");
+
+            System.out.println("\nMENU' DEL GIORNO CON INCLUSO ALLENAMENTO");
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
             fruitDecorator.showFruit();
+            foodForGym();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
-        }
     }
 }

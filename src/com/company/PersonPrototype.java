@@ -1,5 +1,5 @@
 package com.company;
-
+// todo fare l'interfaccia di persone
 public class PersonPrototype {
     private String name;
     private int weight;
