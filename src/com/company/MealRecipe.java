@@ -1,6 +1,6 @@
 package com.company;
 
-public class MealRecipe {
+public class MealRecipe{
     private Protein protein;
     private Fat fat;
     private carbohydrates carbohydrates;

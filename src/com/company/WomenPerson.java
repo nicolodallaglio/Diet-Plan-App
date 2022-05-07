@@ -1,6 +1,6 @@
 package com.company;
 
-public class WomenPerson extends PersonPrototype{
+public class WomenPerson extends PersonPrototype implements IPerson{
     public WomenPerson(String name, int weight, float height, int age) {
         super(name, weight, height, age);
     }
@@ -65,15 +65,19 @@ public class WomenPerson extends PersonPrototype{
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
-
+        TypesOfCooking typesOfCooking = new TypesOfCooking();
+        BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
         for (int i = 0; i < 7; i++) {
             System.out.println("\ngiorno " + (i + 1) + " della dieta");
+            breakfastRecipe.Breakfast();
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
+            typesOfCooking.TypesOfCookingFunction();
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
+            typesOfCooking.TypesOfCookingFunction();
         }
     }
 }

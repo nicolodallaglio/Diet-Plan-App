@@ -83,14 +83,18 @@ public class SportyWomen extends WomenPerson{
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
-
+        TypesOfCooking typesOfCooking = new TypesOfCooking();
+        BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
             System.out.println("\nMENU' DEL GIORNO CON INCLUSO ALLENAMENTO");
+            breakfastRecipe.SportyBreakfast();
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
+            typesOfCooking.TypesOfCookingFunction();
             fruitDecorator.showFruit();
             foodForGym();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
+            typesOfCooking.TypesOfCookingFunction();
     }
 }

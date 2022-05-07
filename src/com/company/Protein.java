@@ -1,7 +1,6 @@
 package com.company;
 
 public class Protein extends BaseMeal{
-
     public Protein(String nameFood) {
         super(nameFood);
     }

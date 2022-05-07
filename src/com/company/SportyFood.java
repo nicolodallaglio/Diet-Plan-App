@@ -32,6 +32,6 @@ public class SportyFood {
     }
 
     public void proteinPreAndPost(){
-        System.out.println("proteine in polvere da miscelare con lo shacker");
+        System.out.println("proteine in polvere da miscelare con lo shaker");
     }
 }
