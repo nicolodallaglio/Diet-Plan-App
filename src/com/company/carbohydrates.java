@@ -1,5 +1,10 @@
 package com.company;
 
+import Model.Alimenti;
+import Model.Datasource;
+
+import java.util.List;
+
 public class carbohydrates extends BaseMeal{
     public carbohydrates(String nameFood) {
         super(nameFood);
@@ -134,7 +139,29 @@ public class carbohydrates extends BaseMeal{
     }
 
     public void chooseFood(){
-        int n = (int) (Math.random() * 3);
+        Datasource datasource = new Datasource();
+        if(!datasource.open()){
+            System.out.println("Non riesco ad aprire datasource");
+            return;
+        }
+
+        List<Alimenti> carboidrati = datasource.queryCarboidrati();
+        if(carboidrati == null){
+            System.out.println("Nessun alimento");
+            return;
+        }
+
+        int n = (int) (Math.random() * 5);
+        int i = 0;
+        for(Alimenti alimento : carboidrati) {
+            i++;
+            if (i == n) {
+                System.out.println(alimento.getName());
+            }
+        }
+
+        datasource.close();
+        /* int n = (int) (Math.random() * 3);
         if (n == 0){
             System.out.println("pasta");
         }else if(n == 1){
@@ -142,5 +169,6 @@ public class carbohydrates extends BaseMeal{
         }else if(n == 2){
             System.out.println("farro");
         }
+         */
     }
 }

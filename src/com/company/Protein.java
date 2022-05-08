@@ -1,5 +1,10 @@
 package com.company;
 
+import Model.Alimenti;
+import Model.Datasource;
+
+import java.util.List;
+
 public class Protein extends BaseMeal{
     public Protein(String nameFood) {
         super(nameFood);
@@ -85,11 +90,28 @@ public class Protein extends BaseMeal{
 
 
     public void chooseFood(){
-        int n = (int) (Math.random() * 2);
-        if (n == 0){
-            System.out.println("carne");
-        }else{
-            System.out.println("pesce");
+        Datasource datasource = new Datasource();
+        if(!datasource.open()){
+            System.out.println("Non riesco ad aprire datasource");
+            return;
         }
+
+        List<Alimenti> proteine = datasource.queryProteine();
+        if(proteine == null){
+            System.out.println("Nessuna proteina");
+            return;
+        }
+
+        int n = (int) (Math.random() * 5);
+        int i = 0;
+        for(Alimenti alimento : proteine) {
+            i++;
+            if (i == n) {
+                System.out.println(alimento.getName());
+            }
+        }
+
+        datasource.close();
     }
+
 }

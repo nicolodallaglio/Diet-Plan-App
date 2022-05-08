@@ -1,5 +1,10 @@
 package com.company;
 
+import Model.Alimenti;
+import Model.Datasource;
+
+import java.util.List;
+
 public class Fat extends BaseMeal{
     public Fat(String nameFood) {
         super(nameFood);
@@ -45,11 +50,27 @@ public class Fat extends BaseMeal{
     }
 
     public void chooseFood(){
-        int n = (int) (Math.random() * 2);
-        if (n == 0){
-            System.out.println("olio");
-        }else{
-            System.out.println("salsa di soia");
+        Datasource datasource = new Datasource();
+        if(!datasource.open()){
+            System.out.println("Non riesco ad aprire datasource");
+            return;
         }
+
+        List<Alimenti> grassi = datasource.queryGrassi();
+        if(grassi == null){
+            System.out.println("Nessun grasso");
+            return;
+        }
+
+        int n = (int) (Math.random() * 8);
+        int i = 0;
+        for(Alimenti alimento : grassi) {
+            i++;
+            if (i == n) {
+                System.out.println(alimento.getName());
+            }
+        }
+
+        datasource.close();
     }
 }

@@ -1,9 +1,36 @@
 package com.company;
+import Model.*;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Datasource datasource = new Datasource();
+        if(!datasource.open()){
+            System.out.println("Non riesco ad aprire datasource");
+            return;
+        }
+
+        List<Alimenti> alimenti = datasource.queryAlimenti();
+        if(alimenti == null){
+            System.out.println("Nessun alimento");
+            return;
+        }
+
+        System.out.println("Benvenuto, questi sono gli elementi presenti nel sistema");
+        for(Alimenti alimento : alimenti) {
+            System.out.println("ID= " +  alimento.getId() +
+                    ", Nome= " + alimento.getName() +
+                    ", Tipo= " + alimento.getTipo()+ ", Calorie= " + alimento.getCalorie() +
+                    ", Carboidrati= " + alimento.getCho() + ", Proteine= " + alimento.getProte() + ", Grassi= " + alimento.getGrassi());
+        }
+
+
+
+
         boolean man;
         boolean sporty;
         Scanner sc = new Scanner(System.in);
@@ -78,6 +105,8 @@ public class Main {
             Protein protein = new Protein(null);
             person.showShortMenu(fat,carbohydrates,protein);
         }
+
+        datasource.close();
 
     }
 }

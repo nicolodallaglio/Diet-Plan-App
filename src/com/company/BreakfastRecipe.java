@@ -35,7 +35,7 @@ public class BreakfastRecipe implements IBreakfast{
         }else if(n == 3){
             System.out.println("Due fette di pane ai 5 cereali con salmone affumicato + un frutto a piacere");
         }else if(n == 4){
-            System.out.println("FPorridge di avena e quinoa al cocco con mirtilli");
+            System.out.println("Porridge di avena e quinoa al cocco con mirtilli");
         }else if(n == 5){
             System.out.println("Omelette preparata con 1 uovo intero e 1 albume, spinaci e due fette di pane ai 5 cereali + proteine");
         }else if(n == 6){
