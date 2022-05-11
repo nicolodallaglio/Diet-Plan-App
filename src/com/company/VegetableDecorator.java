@@ -17,7 +17,7 @@ public class VegetableDecorator extends MealDecorator{
             return;
         }
 
-        List<Alimenti> verdure = datasource.queryFrutta();
+        List<Alimenti> verdure = datasource.queryVerdure();
         if(verdure == null){
             System.out.println("Nessuna verdura");
             return;

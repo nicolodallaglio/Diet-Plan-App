@@ -33,7 +33,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("uomo ? true | donna ? false");
         man = sc.nextBoolean();
-        System.out.println("sportivo ? ");
+        System.out.println("sportivo ?  true | else false ");
         sporty = sc.nextBoolean();
         String name;
         int weight;
@@ -41,7 +41,7 @@ public class Main {
         int age;
 
         if (sporty && man){
-            System.out.println("inserire i propri dati, nome, peso, altezza, eta'");
+            System.out.println("inserire i propri dati, nome, peso, altezza ( in metri ) , eta'");
             name = sc.next();
             weight = sc.nextInt();
             heigh = sc.nextFloat();
