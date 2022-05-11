@@ -28,9 +28,6 @@ public class Main {
                     ", Carboidrati= " + alimento.getCho() + ", Proteine= " + alimento.getProte() + ", Grassi= " + alimento.getGrassi());
         }
 
-
-
-
         boolean man;
         boolean sporty;
         Scanner sc = new Scanner(System.in);
