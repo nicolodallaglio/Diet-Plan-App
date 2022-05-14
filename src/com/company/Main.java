@@ -2,7 +2,7 @@ package com.company;
 import Model.*;
 import com.sun.jdi.ClassNotLoadedException;
 
-
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -101,8 +101,11 @@ public class Main {
         }
 
         datasource.close();
+    } catch (InputMismatchException e) {
+        e.printStackTrace();
     } catch (RuntimeException e) {
         e.printStackTrace();
-        }
+    }
+
     }
 }
