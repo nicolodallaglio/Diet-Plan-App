@@ -101,7 +101,7 @@ public class Main {
                 }
                 datasource.close();
             } catch (InputMismatchException e) {
-                System.out.println("Input errato. Inserire i dati richiesti");
+                System.out.println("Input errato. Inserire i dati richiesti.");
             } catch (RuntimeException e) {
                 System.out.println(("Qualcosa è andato storto"));
                 e.printStackTrace();
