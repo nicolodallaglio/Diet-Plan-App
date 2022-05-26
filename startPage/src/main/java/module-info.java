@@ -9,6 +9,7 @@ module com.example.startpage {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens com.example.startpage to javafx.fxml;
     exports com.example.startpage;

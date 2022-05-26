@@ -8,7 +8,12 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
       <Button fx:id="bottFirst" layoutX="226.0" layoutY="233.0" mnemonicParsing="false" onAction="#premiperproseguire" text="Premi qui per proseguire" />
-      <Label fx:id="labelFirst" layoutX="227.0" layoutY="41.0" prefHeight="56.0" prefWidth="147.0" text="PROGDIETA">
+      <Label fx:id="labelFirst" layoutX="226.0" layoutY="76.0" prefHeight="56.0" prefWidth="147.0" text="PROGDIETA">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFirst1" layoutX="226.0" layoutY="159.0" prefHeight="56.0" prefWidth="147.0" text="Benvenuto">
          <font>
             <Font size="27.0" />
          </font>
