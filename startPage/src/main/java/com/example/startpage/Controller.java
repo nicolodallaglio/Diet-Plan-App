@@ -44,20 +44,39 @@ public class Controller {
     @FXML
     private TextArea textMenu;
 
-    public void nameAction(ActionEvent actionEvent) throws IOException {
-        String nome = name.getText();
-        String cognome = surname.getText();
-        String eta = age.getText();
-        String altezza = height.getText();
-
-
+    public void analizzaAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) analizeData.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
         stage.setTitle("");
         stage.setScene(new Scene(root));
 
+    }
 
+    @FXML
+    private MenuItem woman;
+    public void donnaAction(ActionEvent actionEvent) throws IOException {
+        sex.setText("donna");
+    }
+    @FXML
+    private MenuItem men;
+    public void maschioAction(ActionEvent actionEvent) throws IOException {
+        sex.setText("uomo");
+    }
+    @FXML
+    private MenuItem yesSporty;
+    public void sportyAction(ActionEvent actionEvent) throws IOException {
+        sporty.setText("Sì");
 
+        if(sex.getText().equals("uomo")){
+
+        } else {
+
+        }
+    }
+    @FXML
+    private MenuItem noSporty;
+    public void noSportyAction(ActionEvent actionEvent) throws IOException {
+        sporty.setText("No");
     }
 
 
