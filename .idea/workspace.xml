@@ -5,43 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__groupId_progDieta_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progDieta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/progDieta.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Alimenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Alimenti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Datasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Datasource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BaseMeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/BaseMeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BreakfastRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/BreakfastRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Fat.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Fat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/FruitDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/FruitDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IBaseMeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IBaseMeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IBreakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IBreakfast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IMealDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IMealDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MealDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MealDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MealRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MealRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/PersonPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Protein.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SportyFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/SportyWomen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TypesOfCooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/TypesOfCooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/VegetableDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/VegetableDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/WomenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/carbohydrates.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/carbohydrates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/Model/Alimenti.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/Model/Datasource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/startPage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/startPage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage",
     "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
@@ -161,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653593376307</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.1">
+      <created>1653757812145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653757812145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

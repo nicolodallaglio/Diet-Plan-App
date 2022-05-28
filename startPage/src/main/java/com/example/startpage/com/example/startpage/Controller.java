@@ -5,12 +5,15 @@ import com.company.Fat;
 import com.company.Protein;
 import com.company.SportyMen;
 import com.company.carbohydrates;
+import com.example.company.SportyWomen;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.DepthTest;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -36,6 +39,8 @@ public class Controller {
     private TextField age;
     @FXML
     private TextField height;
+    @FXML
+    private Label weight;
     @FXML
     private SplitMenuButton sex;
     @FXML
@@ -67,26 +72,14 @@ public class Controller {
     private MenuItem yesSporty;
     public void sportyAction(ActionEvent actionEvent) throws IOException {
         sporty.setText("Sì");
-
-        if(sex.getText().equals("uomo")){
-            SportyMen sportyMen = new SportyMen(name.getText(), 56, 17, 22, true);
-            sportyMen.showData();
-            float bmi;
-            bmi = sportyMen.BmiCalculated();
-            sportyMen.bodyFatSituation((int) bmi);
-            Fat fat = new Fat(null);
-            carbohydrates carbohydrates = new carbohydrates(null);
-            Protein protein = new Protein(null);
-            sportyMen.showShortMenu(fat, carbohydrates, protein);
-        } else {
-
-        }
     }
+
     @FXML
     private MenuItem noSporty;
     public void noSportyAction(ActionEvent actionEvent) throws IOException {
         sporty.setText("No");
     }
+
 
 
 
