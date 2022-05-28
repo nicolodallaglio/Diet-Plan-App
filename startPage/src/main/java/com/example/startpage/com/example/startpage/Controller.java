@@ -1,24 +1,26 @@
 package com.example.startpage;
 
-
-import com.company.Fat;
-import com.company.Protein;
-import com.company.SportyMen;
-import com.company.carbohydrates;
-import com.example.company.SportyWomen;
+import com.example.company.SportyMen;
+import com.example.company.*;
+import com.example.model.Alimenti;
+import com.example.model.Datasource;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.DepthTest;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.w3c.dom.events.MouseEvent;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class Controller {
+public class Controller implements Initializable {
+
     @FXML
     private Button bottFirst;
     @FXML
@@ -50,11 +52,18 @@ public class Controller {
     @FXML
     private TextArea textMenu;
 
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+
     public void analizzaAction(ActionEvent actionEvent) throws IOException {
+
         Stage stage = (Stage) analizeData.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
         stage.setTitle("");
         stage.setScene(new Scene(root));
+
 
     }
 
@@ -80,9 +89,68 @@ public class Controller {
         sporty.setText("No");
     }
 
+    @FXML
+    private Label bodyPer;
+    @FXML
+    private Button avanti1;
+    @FXML
+    private Button indietro1;
+
+    public void back1(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+
+    }
+
+    public void closeMenu(ActionEvent actionEvent) throws IOException {
+        System.exit(0);
+    }
+
+    public void mostraAlimenti(ActionEvent actionEvent) throws IOException{
+        com.example.model.Datasource datasource = new Datasource();
+        if (!datasource.open()) {
+            System.out.println("Non riesco ad aprire datasource");
+            return;
+        }
+        List<Alimenti> alimenti = datasource.queryAlimenti();
+        if (alimenti == null) {
+            System.out.println("Nessun alimento");
+            return;
+        }
+        System.out.println("Benvenuto, questi sono gli elementi presenti nel sistema");
+        StringBuilder sb= new StringBuilder();
+        for (Alimenti alimento : alimenti) {
+            sb.append(alimento.getName() + ", Calorie= " + alimento.getCalorie() + ", Carboidrati= " + alimento.getCho() + ", Proteine= " + alimento.getProte() + ", Grassi= " + alimento.getGrassi());
+            sb.append("\n");
+        }
+
+        bodyPer.setText(sb.toString());
+    }
+
+    @FXML
+    public void showBodyFat(ActionEvent actionEvent) throws IOException {
+        SportyMen sportyMen = new SportyMen(name.getText(), Integer.parseInt(weight.getText()), Float.parseFloat(height.getText()), Integer.parseInt(age.getText()), true);
+        StringBuilder sb = new StringBuilder();
+        sb = sportyMen.showData();
+        float bmi;
+        bmi = sportyMen.BmiCalculated();
+        sb.append(sportyMen.bodyFatSituation((int) bmi));
+
+        bodyPer.setText(sb.toString());
+
+    }
+
+    public void next1(ActionEvent actionEvent) throws IOException {
 
 
+    }
+    public void next2(ActionEvent actionEvent) throws IOException {
 
+    }
+    public void next3(ActionEvent actionEvent) throws IOException {
 
+    }
 
 }

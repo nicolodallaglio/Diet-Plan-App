@@ -1,7 +1,7 @@
 package com.example.company;
 
 public interface IPerson {
-    public void showData();
-    public void bodyFatSituation(int bmi);
+    public StringBuilder showData();
+    public StringBuilder bodyFatSituation(int bmi);
     public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein);
 }

@@ -53,12 +53,13 @@ public class PersonPrototype {
         this.age = age;
     }
 
-    public void showData(){
-        System.out.println("nome " + this.name);
-        System.out.println("età " + this.age);
-        System.out.println("peso " + this.weight + " e altezza " + this.height);
-        System.out.println("il bmi è " + BmiCalculated());
+    public StringBuilder showData(){
+        StringBuilder sb = new StringBuilder();
+        return sb.append("nome " + this.name + "età " + this.age + "peso " + this.weight + " e altezza " + this.height + "il bmi è " + BmiCalculated());
+
     }
+
+
 
     public float BmiCalculated(){
         float bmi;
@@ -70,20 +71,22 @@ public class PersonPrototype {
 
 
 
-    public void bodyFatSituation(int bmi){
+    public StringBuilder bodyFatSituation(int bmi){
+        StringBuilder sb = new StringBuilder();
         if (bmi > 30.01){
-            System.out.println("obesità di prima classe");
+            sb.append("obesità di prima classe");
         }else if ((bmi >= 25.01) && (bmi < 30)){
-            System.out.println("sovrappeso");
+            sb.append("sovrappeso");
         }else if ((bmi >= 18.51) && (bmi < 25)){
-            System.out.println("regolare");
+            sb.append("regolare");
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
-            System.out.println("leggermente sottopeso");
+            sb.append("leggermente sottopeso");
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
-            System.out.println("sottopeso");
+            sb.append("sottopeso");
         }else{
-            System.out.println("non ci sono dati che vanno bene");
+            sb.append("non ci sono dati che vanno bene");
         }
+        return sb;
     }
 
    public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {

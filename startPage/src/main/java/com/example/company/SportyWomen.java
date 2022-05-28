@@ -54,8 +54,9 @@ public class SportyWomen extends WomenPerson{
     }
 
     @Override
-    public void showData() {
+    public StringBuilder showData() {
         super.showData();
+        return null;
     }
 
     @Override
@@ -64,8 +65,9 @@ public class SportyWomen extends WomenPerson{
     }
 
     @Override
-    public void bodyFatSituation(int bmi) {
+    public StringBuilder bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
+        return null;
     }
 
     public void foodForGym(){

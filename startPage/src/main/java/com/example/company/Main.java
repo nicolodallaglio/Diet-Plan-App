@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        com.example.model.Datasource datasource = new Datasource();
+        Datasource datasource = new Datasource();
         if (!datasource.open()) {
             System.out.println("Non riesco ad aprire datasource");
             return;

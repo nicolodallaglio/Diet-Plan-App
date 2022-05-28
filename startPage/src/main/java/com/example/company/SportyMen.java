@@ -59,15 +59,21 @@ public class SportyMen extends PersonPrototype{
     public void setAge(int age) {
         super.setAge(age);
     }
-
     @Override
-    public void showData() {
-        super.showData();
+    public float BmiCalculated() {
+        return super.BmiCalculated();
     }
 
     @Override
-    public void bodyFatSituation(int bmi) {
+    public StringBuilder showData() {
+        super.showData();
+        return null;
+    }
+
+    @Override
+    public StringBuilder bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
+        return null;
     }
 
     public void foodForGym(){
