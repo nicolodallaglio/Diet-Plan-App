@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 
 public interface IPerson {
     public void showData();

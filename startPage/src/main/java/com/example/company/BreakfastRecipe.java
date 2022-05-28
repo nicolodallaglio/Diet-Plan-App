@@ -1,6 +1,7 @@
-package com.company;
+package com.example.company;
 
-public class BreakfastRecipe implements IBreakfast{
+
+public class BreakfastRecipe implements IBreakfast {
     public void Breakfast(){
         System.out.println("colazione");
         int n = (int) (Math.random() * 8);

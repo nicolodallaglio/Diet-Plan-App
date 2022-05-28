@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="startPage" />
+        <module name="progDieta" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="progDieta" target="11" />
       <module name="startPage" target="11" />
     </bytecodeTargetLevel>
   </component>

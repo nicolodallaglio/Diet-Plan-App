@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 
 public interface IBreakfast {
     public void Breakfast();

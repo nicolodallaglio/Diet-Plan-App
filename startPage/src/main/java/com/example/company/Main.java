@@ -1,6 +1,6 @@
-package com.company;
-import Model.*;
-import com.sun.jdi.ClassNotLoadedException;
+package com.example.company;
+import com.example.model.Alimenti;
+import com.example.model.Datasource;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Datasource datasource = new Datasource();
+        com.example.model.Datasource datasource = new Datasource();
         if (!datasource.open()) {
             System.out.println("Non riesco ad aprire datasource");
             return;
         }
-        List<Alimenti> alimenti = datasource.queryAlimenti();
+        List<com.example.model.Alimenti> alimenti = datasource.queryAlimenti();
         if (alimenti == null) {
             System.out.println("Nessun alimento");
             return;

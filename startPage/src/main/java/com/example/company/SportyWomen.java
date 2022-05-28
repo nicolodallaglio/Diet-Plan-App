@@ -1,8 +1,11 @@
-package com.company;
+package com.example.company;
 
-public class MenPerson extends PersonPrototype implements IPerson{
-    public MenPerson(String name, int weight, float height, int age) {
+public class SportyWomen extends WomenPerson{
+    private boolean useProtein;
+
+    public SportyWomen(String name, int weight, float height, int age) {
         super(name, weight, height, age);
+        this.useProtein = useProtein;
     }
 
     @Override
@@ -56,8 +59,23 @@ public class MenPerson extends PersonPrototype implements IPerson{
     }
 
     @Override
+    public float BmiCalculated() {
+        return super.BmiCalculated();
+    }
+
+    @Override
     public void bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
+    }
+
+    public void foodForGym(){
+        SportyFood sportyFood = new SportyFood();
+        if (useProtein){
+            sportyFood.proteinPreAndPost();
+        }else{
+            sportyFood.chooseFoodPreWorkout();
+            sportyFood.chooseFoodPostWorkout();
+        }
     }
 
     @Override
@@ -67,17 +85,16 @@ public class MenPerson extends PersonPrototype implements IPerson{
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
         TypesOfCooking typesOfCooking = new TypesOfCooking();
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
-        for (int i = 0; i < 7; i++) {
-            System.out.println("\ngiorno " + (i + 1) + " della dieta");
-            breakfastRecipe.Breakfast();
+            System.out.println("\nMENU' DEL GIORNO CON INCLUSO ALLENAMENTO");
+            breakfastRecipe.SportyBreakfast();
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
             typesOfCooking.TypesOfCookingFunction();
             fruitDecorator.showFruit();
+            foodForGym();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
             typesOfCooking.TypesOfCookingFunction();
-        }
     }
 }

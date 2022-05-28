@@ -1,4 +1,4 @@
-package Model;
+package com.example.model;
 
 public class Alimenti {
     private int id;

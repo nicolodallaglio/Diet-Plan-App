@@ -1,7 +1,7 @@
-package com.company;
+package com.example.company;
 
-import Model.Alimenti;
-import Model.Datasource;
+import com.example.model.Alimenti;
+import com.example.model.Datasource;
 
 import java.util.List;
 

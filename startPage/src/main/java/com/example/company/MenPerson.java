@@ -1,7 +1,7 @@
-package com.company;
+package com.example.company;
 
-public class WomenPerson extends PersonPrototype implements IPerson{
-    public WomenPerson(String name, int weight, float height, int age) {
+public class MenPerson extends PersonPrototype implements IPerson{
+    public MenPerson(String name, int weight, float height, int age) {
         super(name, weight, height, age);
     }
 
@@ -54,6 +54,7 @@ public class WomenPerson extends PersonPrototype implements IPerson{
     public void showData() {
         super.showData();
     }
+
     @Override
     public void bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
@@ -61,7 +62,6 @@ public class WomenPerson extends PersonPrototype implements IPerson{
 
     @Override
     public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
-        //super.showShortMenu(fat, carbohydrates, protein);
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);

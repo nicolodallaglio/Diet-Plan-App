@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 
 public class SportyFood {
     // todo prodotti sportivi per chi fa sport

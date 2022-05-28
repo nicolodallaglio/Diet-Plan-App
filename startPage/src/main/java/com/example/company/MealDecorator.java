@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 
 public class MealDecorator {
     private String nameDecorator;

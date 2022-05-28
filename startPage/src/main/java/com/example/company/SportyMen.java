@@ -1,10 +1,17 @@
-package com.company;
+package com.example.company;
 
-public class SportyWomen extends WomenPerson{
+public class SportyMen extends PersonPrototype{
     private boolean useProtein;
-
-    public SportyWomen(String name, int weight, float height, int age) {
+    public SportyMen(String name, int weight, float height, int age, boolean useProtein) {
         super(name, weight, height, age);
+        this.useProtein = useProtein;
+    }
+
+    public boolean isUseProtein() {
+        return useProtein;
+    }
+
+    public void setUseProtein(boolean useProtein) {
         this.useProtein = useProtein;
     }
 
@@ -56,11 +63,6 @@ public class SportyWomen extends WomenPerson{
     @Override
     public void showData() {
         super.showData();
-    }
-
-    @Override
-    public float BmiCalculated() {
-        return super.BmiCalculated();
     }
 
     @Override

@@ -1,18 +1,8 @@
-package com.company;
+package com.example.company;
 
-public class SportyMen extends PersonPrototype{
-    private boolean useProtein;
-    public SportyMen(String name, int weight, float height, int age, boolean useProtein) {
+public class WomenPerson extends PersonPrototype implements IPerson{
+    public WomenPerson(String name, int weight, float height, int age) {
         super(name, weight, height, age);
-        this.useProtein = useProtein;
-    }
-
-    public boolean isUseProtein() {
-        return useProtein;
-    }
-
-    public void setUseProtein(boolean useProtein) {
-        this.useProtein = useProtein;
     }
 
     @Override
@@ -64,39 +54,30 @@ public class SportyMen extends PersonPrototype{
     public void showData() {
         super.showData();
     }
-
     @Override
     public void bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
     }
 
-    public void foodForGym(){
-        SportyFood sportyFood = new SportyFood();
-        if (useProtein){
-            sportyFood.proteinPreAndPost();
-        }else{
-            sportyFood.chooseFoodPreWorkout();
-            sportyFood.chooseFoodPostWorkout();
-        }
-    }
-
     @Override
     public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
+        //super.showShortMenu(fat, carbohydrates, protein);
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
         TypesOfCooking typesOfCooking = new TypesOfCooking();
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
-            System.out.println("\nMENU' DEL GIORNO CON INCLUSO ALLENAMENTO");
-            breakfastRecipe.SportyBreakfast();
+        for (int i = 0; i < 7; i++) {
+            System.out.println("\ngiorno " + (i + 1) + " della dieta");
+            breakfastRecipe.Breakfast();
             fruitDecorator.showFruit();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
             typesOfCooking.TypesOfCookingFunction();
             fruitDecorator.showFruit();
-            foodForGym();
             mealRecipe.PricipleMeal(this);
             vegetableDecorator.showVegetable();
             typesOfCooking.TypesOfCookingFunction();
+        }
     }
 }

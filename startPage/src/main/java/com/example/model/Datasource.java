@@ -1,4 +1,6 @@
-package Model;
+package com.example.model;
+
+import com.example.model.Alimenti;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -111,15 +113,15 @@ import java.util.List;
         }
 
         //metodo che restituisce la lista degli ingredienti
-        public List<Alimenti> queryAlimenti() {
+        public List<com.example.model.Alimenti> queryAlimenti() {
 
-            List<Alimenti> alimenti = new ArrayList<>();
+            List<com.example.model.Alimenti> alimenti = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results = statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI) ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti alimento = new Alimenti();
+                    com.example.model.Alimenti alimento = new com.example.model.Alimenti();
                     alimento.setId(results.getInt(COLUMN_ID));
                     alimento.setName(results.getString(COLUMN_NAME));
                     alimento.setTipo(results.getString(COLUMN_TIPO));
@@ -138,16 +140,16 @@ import java.util.List;
             return alimenti;
         }
 
-        public List<Alimenti> queryCarboidrati() {
+        public List<com.example.model.Alimenti> queryCarboidrati() {
 
-            List<Alimenti> carboidrati = new ArrayList<>();
+            List<com.example.model.Alimenti> carboidrati = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results =
                         statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI + " WHERE tipo='carboidrato'") ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti carboidrato = new Alimenti();
+                    com.example.model.Alimenti carboidrato = new com.example.model.Alimenti();
                     carboidrato.setId(results.getInt(COLUMN_ID));
                     carboidrato.setName(results.getString(COLUMN_NAME));
                     carboidrato.setTipo(results.getString(COLUMN_TIPO));
@@ -166,16 +168,16 @@ import java.util.List;
             return carboidrati;
         }
 
-        public List<Alimenti> queryGrassi() {
+        public List<com.example.model.Alimenti> queryGrassi() {
 
-            List<Alimenti> grassi = new ArrayList<>();
+            List<com.example.model.Alimenti> grassi = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results =
                         statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI + " WHERE tipo='grassi'") ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti grasso = new Alimenti();
+                    com.example.model.Alimenti grasso = new com.example.model.Alimenti();
                     grasso.setId(results.getInt(COLUMN_ID));
                     grasso.setName(results.getString(COLUMN_NAME));
                     grasso.setTipo(results.getString(COLUMN_TIPO));
@@ -194,16 +196,16 @@ import java.util.List;
             return grassi;
         }
 
-        public List<Alimenti> queryProteine() {
+        public List<com.example.model.Alimenti> queryProteine() {
 
-            List<Alimenti> proteine = new ArrayList<>();
+            List<com.example.model.Alimenti> proteine = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results =
                         statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI + " WHERE tipo='proteina'") ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti proteina = new Alimenti();
+                    com.example.model.Alimenti proteina = new com.example.model.Alimenti();
                     proteina.setId(results.getInt(COLUMN_ID));
                     proteina.setName(results.getString(COLUMN_NAME));
                     proteina.setTipo(results.getString(COLUMN_TIPO));
@@ -222,16 +224,16 @@ import java.util.List;
             return proteine;
         }
 
-        public List<Alimenti> queryFrutta() {
+        public List<com.example.model.Alimenti> queryFrutta() {
 
-            List<Alimenti> frutta = new ArrayList<>();
+            List<com.example.model.Alimenti> frutta = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results =
                         statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI + " WHERE tipo='frutta'") ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti frutto = new Alimenti();
+                    com.example.model.Alimenti frutto = new com.example.model.Alimenti();
                     frutto.setId(results.getInt(COLUMN_ID));
                     frutto.setName(results.getString(COLUMN_NAME));
                     frutto.setTipo(results.getString(COLUMN_TIPO));
@@ -250,16 +252,16 @@ import java.util.List;
             return frutta;
         }
 
-        public List<Alimenti> queryVerdure() {
+        public List<com.example.model.Alimenti> queryVerdure() {
 
-            List<Alimenti> verdure = new ArrayList<>();
+            List<com.example.model.Alimenti> verdure = new ArrayList<>();
             try(Statement statement = conn.createStatement();
                 ResultSet results =
                         statement.executeQuery("SELECT * FROM " + TABLE_ALIMENTI + " WHERE tipo='verdura'") ) {
 
                 // List<Ingredienti> ingredienti = new ArrayList<>();
                 while (results.next()) {
-                    Alimenti verdura = new Alimenti();
+                    com.example.model.Alimenti verdura = new Alimenti();
                     verdura.setId(results.getInt(COLUMN_ID));
                     verdura.setName(results.getString(COLUMN_NAME));
                     verdura.setTipo(results.getString(COLUMN_TIPO));

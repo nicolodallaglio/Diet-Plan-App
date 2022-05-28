@@ -1,18 +1,19 @@
 package com.example.startpage;
-import Model.*;
 
+
+import com.company.Fat;
+import com.company.Protein;
+import com.company.SportyMen;
+import com.company.carbohydrates;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.event.ActionEvent;
 import javafx.stage.Stage;
-import org.w3c.dom.events.MouseEvent;
 
 import java.io.IOException;
-import java.util.List;
 
 public class Controller {
     @FXML
@@ -68,7 +69,15 @@ public class Controller {
         sporty.setText("Sì");
 
         if(sex.getText().equals("uomo")){
-
+            SportyMen sportyMen = new SportyMen(name.getText(), 56, 17, 22, true);
+            sportyMen.showData();
+            float bmi;
+            bmi = sportyMen.BmiCalculated();
+            sportyMen.bodyFatSituation((int) bmi);
+            Fat fat = new Fat(null);
+            carbohydrates carbohydrates = new carbohydrates(null);
+            Protein protein = new Protein(null);
+            sportyMen.showShortMenu(fat, carbohydrates, protein);
         } else {
 
         }

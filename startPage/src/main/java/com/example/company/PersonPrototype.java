@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 // todo fare l'interfaccia di persone
 public class PersonPrototype {
     private String name;

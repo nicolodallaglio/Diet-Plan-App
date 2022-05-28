@@ -1,4 +1,4 @@
-package com.company;
+package com.example.company;
 
 public class MealRecipe{
     private Protein protein;
@@ -15,7 +15,7 @@ public class MealRecipe{
         return protein;
     }
 
-    public com.company.carbohydrates getCarbohydrates() {
+    public com.example.company.carbohydrates getCarbohydrates() {
         return carbohydrates;
     }
 
