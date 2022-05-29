@@ -38,7 +38,7 @@
                <children>
                   <TextField fx:id="height" layoutX="227.0" layoutY="2.0" promptText="altezza (mt)" />
                   <TextField fx:id="weight" layoutX="227.0" layoutY="41.0" promptText="peso" />
-                  <SplitMenuButton fx:id="sex" layoutX="212.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#getInput" text="sesso">
+                  <SplitMenuButton fx:id="sex" layoutX="212.0" layoutY="88.0" mnemonicParsing="false" text="sesso">
                     <items>
                       <MenuItem fx:id="men" mnemonicParsing="false" onAction="#maschioAction" text="uomo" />
                       <MenuItem fx:id="woman" mnemonicParsing="false" onAction="#donnaAction" text="donna" />

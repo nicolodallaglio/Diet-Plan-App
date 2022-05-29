@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="400.0" maxWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
       <Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;">
@@ -55,6 +54,11 @@
                </font>
             </Label>
             <Label layoutX="166.0" layoutY="248.0" text="Perdi peso">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelFirst2" layoutX="256.0" layoutY="106.0" prefHeight="30.0" prefWidth="175.0" text="dieta settimanale in un click">
                <font>
                   <Font name="System Bold Italic" size="13.0" />
                </font>

@@ -66,8 +66,7 @@ public class SportyMen extends PersonPrototype{
 
     @Override
     public StringBuilder showData() {
-        super.showData();
-        return new StringBuilder();
+        return super.showData();
     }
 
     @Override

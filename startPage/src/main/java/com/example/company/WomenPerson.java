@@ -52,15 +52,12 @@ public class WomenPerson extends PersonPrototype implements IPerson{
 
     @Override
     public StringBuilder showData() {
-        super.showData();
-        return null;
+       return super.showData();
     }
     @Override
     public String bodyFatSituation(int bmi) {
-        super.bodyFatSituation(bmi);
-        return bodyFatSituation(bmi);
+        return super.bodyFatSituation(bmi);
     }
-
     @Override
     public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
         //super.showShortMenu(fat, carbohydrates, protein);

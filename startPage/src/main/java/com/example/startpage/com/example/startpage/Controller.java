@@ -1,6 +1,9 @@
 package com.example.startpage;
 
+import com.example.company.MenPerson;
 import com.example.company.SportyMen;
+import com.example.company.SportyWomen;
+import com.example.company.WomenPerson;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
 import javafx.css.Style;
@@ -86,6 +89,8 @@ public class Controller implements Initializable {
     private static int peso;
 
     private static int eta = 0;
+    private static String sesso= "";
+    private static String attivita = "";
 
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -104,7 +109,16 @@ public class Controller implements Initializable {
                 cognome = surname.getText();
                 peso = Integer.parseInt(weight.getText());
                 altezza = Float.parseFloat(height.getText());
+                if(altezza<1.5 || peso<40){
+                    throw new Exception();
+                }
                 eta = Integer.parseInt(age.getText());
+                if(!sex.getText().equals("uomo") && !sex.getText().equals("donna")){
+                    throw new Exception();
+                }
+                if(!sporty.getText().equals("Sì") && !sporty.getText().equals("No")){
+                    throw new Exception();
+                };
             } catch (Exception e) {
                 errorLabel.setText("ERRORE:\n" + "inserire correttamente i dati");
                 getInput(actionEvent);
@@ -126,18 +140,22 @@ public class Controller implements Initializable {
 
     public void donnaAction(ActionEvent actionEvent) throws IOException {
         sex.setText("donna");
+        sesso=sex.getText();
     }
 
     public void maschioAction(ActionEvent actionEvent) throws IOException {
         sex.setText("uomo");
+        sesso=sex.getText();
     }
 
     public void sportyAction(ActionEvent actionEvent) throws IOException {
         sporty.setText("Sì");
+        attivita=sporty.getText();
     }
 
     public void noSportyAction(ActionEvent actionEvent) throws IOException {
         sporty.setText("No");
+        attivita=sporty.getText();
     }
 
     public void back1(ActionEvent actionEvent) throws IOException {
@@ -199,11 +217,33 @@ public class Controller implements Initializable {
 
     public void showBodyFat(MouseEvent mouseEvent) throws IOException {
         mainMenuText.setText("Eccoci nel menu principale, " + nome + "!\n"+ "Troverai i pasti per tutta la settimana e ulteriori informazioni utili.");
-        SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
         StringBuilder sb = new StringBuilder();
-        float bmi;
-        bmi = sportyMen.BmiCalculated();
+        double bmi;
+
+      if(attivita.equals("Sì") && sesso.equals("uomo")){
+        SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
+        bmi = Math.round((sportyMen.BmiCalculated()));
         bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(sportyMen.bodyFatSituation((int)bmi)).toString());
+      }
+      else if (attivita.equals("Sì") && sesso.equals("donna"))
+      {
+          SportyWomen sportyWomen = new SportyWomen(nome, peso, altezza, eta);
+          bmi = Math.round((sportyWomen.BmiCalculated()));
+          bodyPer.setText(sb.append("No tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(sportyWomen.bodyFatSituation((int)bmi)).toString());
+      }
+      else if (attivita.equals("No") && sesso.equals("uomo"))
+      {
+          MenPerson menPerson = new MenPerson(nome, peso, altezza, eta);
+          bmi = Math.round((menPerson.BmiCalculated()));
+          bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(menPerson.bodyFatSituation((int)bmi)).toString());
+
+      }
+      else
+      {
+          WomenPerson womenPerson = new WomenPerson(nome, peso, altezza, eta);
+          bmi = Math.round((womenPerson.BmiCalculated()));
+          bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(womenPerson.bodyFatSituation((int)bmi)).toString());
+      }
     }
 
     public void next1(ActionEvent actionEvent) throws IOException {}
