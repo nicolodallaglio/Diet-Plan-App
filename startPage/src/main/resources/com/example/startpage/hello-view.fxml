@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
       <BorderPane layoutX="-2.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
          <left>
@@ -42,19 +42,22 @@
                <children>
                   <TextField fx:id="height" layoutX="226.0" layoutY="2.0" promptText="altezza" />
                   <TextField fx:id="weight" layoutX="226.0" layoutY="37.0" promptText="peso" />
-                  <SplitMenuButton fx:id="sex" layoutX="209.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#getInput" text="sesso">
+                  <SplitMenuButton fx:id="sex" layoutX="212.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#getInput" text="sesso">
                     <items>
                       <MenuItem fx:id="men" mnemonicParsing="false" onAction="#maschioAction" text="uomo" />
                       <MenuItem fx:id="woman" mnemonicParsing="false" onAction="#donnaAction" text="donna" />
                     </items>
                   </SplitMenuButton>
-                  <SplitMenuButton fx:id="sporty" layoutX="307.0" layoutY="88.0" mnemonicParsing="false" text="sport">
+                  <SplitMenuButton fx:id="sporty" layoutX="318.0" layoutY="88.0" mnemonicParsing="false" text="sport">
                     <items>
                       <MenuItem fx:id="yesSporty" mnemonicParsing="false" onAction="#sportyAction" text="3 o piu allenamenti a settimana" />
                       <MenuItem fx:id="noSporty" mnemonicParsing="false" onAction="#noSportyAction" text="non mi alleno o poco frequentemente" />
                     </items>
                   </SplitMenuButton>
-                  <Button fx:id="analizeData" layoutX="235.0" layoutY="144.0" mnemonicParsing="false" onAction="#getInput" onMouseClicked="#analizzaAction" text="ANALIZZA I MIEI DATI" />
+                  <Button fx:id="analizeData" layoutX="229.0" layoutY="146.0" mnemonicParsing="false" onAction="#getInput" onMouseClicked="#analizzaAction" text="ANALIZZA I MIEI DATI">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
                </children>
             </AnchorPane>
          </bottom>

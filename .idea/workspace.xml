@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
+      <change afterPath="$PROJECT_DIR$/startPage/Mela.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/Spunta.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -151,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653777078554</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.1">
+      <created>1653821661567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653821661567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

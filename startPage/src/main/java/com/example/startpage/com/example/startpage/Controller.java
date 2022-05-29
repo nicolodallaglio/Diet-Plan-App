@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -84,6 +85,7 @@ public class Controller implements Initializable {
         peso=weight.getText();
         altezza=height.getText();
         eta=age.getText();
+
 
         System.out.println(nome);
         System.out.println(cognome);
