@@ -3,6 +3,7 @@ package com.example.startpage;
 import com.example.company.SportyMen;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
+import javafx.css.Style;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -71,6 +73,8 @@ public class Controller implements Initializable {
     private Text textAlim;
     @FXML
     private Label errorLabel;
+    @FXML
+    private Text mainMenuText;
 
 
     private static String nome = "";
@@ -172,10 +176,8 @@ public class Controller implements Initializable {
         }
 
         StringBuilder sb= new StringBuilder();
-        sb.append("Questi sono gli elementi presenti nel sistema: \n");
-
         for (Alimenti alimento : alimenti) {
-            sb.append(alimento.getName()).append(", Calorie= ").append(alimento.getCalorie());
+            sb.append(alimento.getName().toUpperCase()).append(", calorie= ").append(alimento.getCalorie());
             sb.append("\n");
         }
 
@@ -195,13 +197,13 @@ public class Controller implements Initializable {
         stage.setScene(new Scene(root));
     }
 
-    public void showBodyFat(ActionEvent actionEvent) throws IOException {
-
+    public void showBodyFat(MouseEvent mouseEvent) throws IOException {
+        mainMenuText.setText("Eccoci nel menu principale, " + nome + "!\n"+ "Troverai i pasti per tutta la settimana e ulteriori informazioni utili.");
         SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
         StringBuilder sb = new StringBuilder();
         float bmi;
         bmi = sportyMen.BmiCalculated();
-        bodyPer.setText(sb.append("Ecco i tuoi parametri:\n").append("La tua bodyfat è: ").append(sportyMen.bodyFatSituation((int)bmi)).toString());
+        bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(sportyMen.bodyFatSituation((int)bmi)).toString());
     }
 
     public void next1(ActionEvent actionEvent) throws IOException {}

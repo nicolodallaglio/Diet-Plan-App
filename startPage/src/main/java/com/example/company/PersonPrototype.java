@@ -68,17 +68,17 @@ public class PersonPrototype {
 
     public String bodyFatSituation(int bmi){
         if (bmi > 30.01){
-            return ("obesità di prima classe");
+            return ("obesità di prima classe.");
         }else if ((bmi >= 25.01) && (bmi < 30)){
-            return("sovrappeso");
+            return("sovrappeso.");
         }else if ((bmi >= 18.51) && (bmi < 25)){
-            return("regolare");
+            return("regolare.");
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
-            return("leggermente sottopeso");
+            return("leggermente sottopeso.");
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
-            return("sottopeso");
+            return("sottopeso.");
         }else{
-            return("non ci sono dati che vanno bene");
+            return("Bodyfat non calcolabile");
         }
     }
 
