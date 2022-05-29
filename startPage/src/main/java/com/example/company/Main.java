@@ -19,10 +19,7 @@ public class Main {
             System.out.println("Nessun alimento");
             return;
         }
-        System.out.println("Benvenuto, questi sono gli elementi presenti nel sistema");
-        for (Alimenti alimento : alimenti) {
-            System.out.println("ID= " + alimento.getId() + ", Nome= " + alimento.getName() + ", Tipo= " + alimento.getTipo() + ", Calorie= " + alimento.getCalorie() + ", Carboidrati= " + alimento.getCho() + ", Proteine= " + alimento.getProte() + ", Grassi= " + alimento.getGrassi());
-        }
+        System.out.println("Benvenuto");
 
         int age=-1;
         do {

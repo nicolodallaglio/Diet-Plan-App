@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.security.spec.ECField;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -64,11 +65,11 @@ public class Controller implements Initializable {
 
     private String cognome= "";
 
-    private String altezza= "";
+    private float altezza;
 
-    private String peso= "";
+    private int peso;
 
-    private String eta= "";
+    private int eta;
 
 
     public void premiperproseguire(ActionEvent actionEvent) throws IOException {
@@ -82,9 +83,9 @@ public class Controller implements Initializable {
 
         nome=name.getText();
         cognome=surname.getText();
-        peso=weight.getText();
-        altezza=height.getText();
-        eta=age.getText();
+        peso=Integer.parseInt(weight.getText());
+        altezza=Float.parseFloat(height.getText());
+        eta=Integer.parseInt(age.getText());
 
 
         System.out.println(nome);
@@ -147,7 +148,7 @@ public class Controller implements Initializable {
         StringBuilder sb= new StringBuilder();
         sb.append("Questi sono gli elementi presenti nel sistema: \n");
         for (Alimenti alimento : alimenti) {
-            sb.append(alimento.getName()).append(", Calorie= ").append(alimento.getCalorie()).append(", Carboidrati= ").append(alimento.getCho()).append(", Proteine= ").append(alimento.getProte()).append(", Grassi= ").append(alimento.getGrassi());
+            sb.append(alimento.getName()).append(", Calorie= ").append(alimento.getCalorie());
             sb.append("\n");
         }
         bodyPer.setText(sb.toString());
@@ -155,9 +156,11 @@ public class Controller implements Initializable {
 
 
     public void showBodyFat(ActionEvent actionEvent) throws IOException {
-        SportyMen sportyMen = new SportyMen(name.getText(), Integer.parseInt(weight.getText()), Float.parseFloat(height.getText()), Integer.parseInt(age.getText()), true);
+
+        //SportyMen sportyMen = new SportyMen(nome,Integer.parseInt(peso),Float.parseFloat(altezza),Integer.parseInt(peso), true);
+        SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
         StringBuilder sb = new StringBuilder();
-        sb = sportyMen.showData();
+        bodyPer.setText(sb.append("Ecco i tuoi parametri: \n ").append(sportyMen.bodyFatSituation(13)).toString());
 
     }
 

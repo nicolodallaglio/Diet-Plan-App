@@ -53,13 +53,13 @@ public class MenPerson extends PersonPrototype implements IPerson{
     @Override
     public StringBuilder showData() {
         super.showData();
-        return null;
+        return new StringBuilder();
     }
 
     @Override
-    public StringBuilder bodyFatSituation(int bmi) {
+    public String bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
-        return null;
+        return bodyFatSituation(bmi);
     }
 
     @Override

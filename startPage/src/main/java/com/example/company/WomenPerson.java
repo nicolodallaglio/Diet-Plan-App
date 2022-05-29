@@ -56,9 +56,9 @@ public class WomenPerson extends PersonPrototype implements IPerson{
         return null;
     }
     @Override
-    public StringBuilder bodyFatSituation(int bmi) {
+    public String bodyFatSituation(int bmi) {
         super.bodyFatSituation(bmi);
-        return null;
+        return bodyFatSituation(bmi);
     }
 
     @Override

@@ -7,11 +7,6 @@ public class SportyMen extends PersonPrototype{
         this.useProtein = useProtein;
     }
 
-    public SportyMen() {
-        super();
-    }
-
-
     public boolean isUseProtein() {
         return useProtein;
     }
@@ -72,13 +67,12 @@ public class SportyMen extends PersonPrototype{
     @Override
     public StringBuilder showData() {
         super.showData();
-        return null;
+        return new StringBuilder();
     }
 
     @Override
-    public StringBuilder bodyFatSituation(int bmi) {
-        super.bodyFatSituation(bmi);
-        return null;
+    public String bodyFatSituation(int bmi) {
+        return super.bodyFatSituation(bmi);
     }
 
     public void foodForGym(){

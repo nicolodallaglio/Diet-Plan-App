@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/startPage/Mela.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/startPage/Spunta.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/IPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +53,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage",
+    "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\java" />
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\resources\com\example\startpage" />
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\java\com\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -165,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653821661567</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.1">
+      <created>1653824307878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653824307879</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

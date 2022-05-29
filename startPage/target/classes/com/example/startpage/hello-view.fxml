@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
       <BorderPane layoutX="-2.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
          <left>
-            <AnchorPane prefHeight="278.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <AnchorPane prefHeight="248.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </left>
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -22,11 +22,7 @@
                   <TextField fx:id="name" layoutX="28.0" layoutY="75.0" promptText="nome" />
                   <TextField fx:id="surname" layoutX="28.0" layoutY="119.0" promptText="cognome" />
                   <TextField fx:id="age" layoutX="28.0" layoutY="161.0" promptText="età" />
-                  <Label layoutX="57.0" layoutY="14.0" text="Benvenuto">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font></Label>
-                  <Label layoutX="29.0" layoutY="40.0" text="inserisci i tuoi dati">
+                  <Label layoutX="29.0" layoutY="26.0" text="Inserisci i tuoi dati">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
@@ -40,8 +36,8 @@
          <bottom>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="height" layoutX="226.0" layoutY="2.0" promptText="altezza" />
-                  <TextField fx:id="weight" layoutX="226.0" layoutY="37.0" promptText="peso" />
+                  <TextField fx:id="height" layoutX="227.0" layoutY="2.0" prefHeight="25.0" prefWidth="151.0" promptText="altezza" />
+                  <TextField fx:id="weight" layoutX="229.0" layoutY="41.0" promptText="peso" />
                   <SplitMenuButton fx:id="sex" layoutX="212.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#getInput" text="sesso">
                     <items>
                       <MenuItem fx:id="men" mnemonicParsing="false" onAction="#maschioAction" text="uomo" />
