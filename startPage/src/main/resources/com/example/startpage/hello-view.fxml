@@ -14,19 +14,14 @@
    <children>
       <BorderPane layoutX="-2.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
          <left>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Label layoutX="155.0" layoutY="83.0" text="nome" />
-                  <Label layoutX="145.0" layoutY="124.0" text="cognome" />
-                  <Label layoutX="161.0" layoutY="165.0" text="età" />
-               </children></AnchorPane>
+            <AnchorPane prefHeight="278.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </left>
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="name" layoutX="28.0" layoutY="75.0" />
-                  <TextField fx:id="surname" layoutX="28.0" layoutY="119.0" />
-                  <TextField fx:id="age" layoutX="28.0" layoutY="161.0" />
+                  <TextField fx:id="name" layoutX="28.0" layoutY="75.0" promptText="nome" />
+                  <TextField fx:id="surname" layoutX="28.0" layoutY="119.0" promptText="cognome" />
+                  <TextField fx:id="age" layoutX="28.0" layoutY="161.0" promptText="età" />
                   <Label layoutX="57.0" layoutY="14.0" text="Benvenuto">
                      <font>
                         <Font name="System Bold" size="17.0" />
@@ -45,7 +40,9 @@
          <bottom>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <SplitMenuButton fx:id="sex" layoutX="209.0" layoutY="88.0" mnemonicParsing="false" text="sesso">
+                  <TextField fx:id="height" layoutX="226.0" layoutY="2.0" promptText="altezza" />
+                  <TextField fx:id="weight" layoutX="226.0" layoutY="37.0" promptText="peso" />
+                  <SplitMenuButton fx:id="sex" layoutX="209.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#getInput" text="sesso">
                     <items>
                       <MenuItem fx:id="men" mnemonicParsing="false" onAction="#maschioAction" text="uomo" />
                       <MenuItem fx:id="woman" mnemonicParsing="false" onAction="#donnaAction" text="donna" />
@@ -57,11 +54,7 @@
                       <MenuItem fx:id="noSporty" mnemonicParsing="false" onAction="#noSportyAction" text="non mi alleno o poco frequentemente" />
                     </items>
                   </SplitMenuButton>
-                  <Button fx:id="analizeData" layoutX="235.0" layoutY="144.0" mnemonicParsing="false" onAction="#analizzaAction" text="ANALIZZA I MIEI DATI" />
-                  <Label layoutX="149.0" layoutY="6.0" text="altezza" />
-                  <TextField fx:id="height" layoutX="226.0" layoutY="2.0" />
-                  <TextField fx:id="height1" layoutX="226.0" layoutY="42.0" />
-                  <Label fx:id="weight" layoutX="149.0" layoutY="46.0" text="peso" />
+                  <Button fx:id="analizeData" layoutX="235.0" layoutY="144.0" mnemonicParsing="false" onAction="#getInput" onMouseClicked="#analizzaAction" text="ANALIZZA I MIEI DATI" />
                </children>
             </AnchorPane>
          </bottom>

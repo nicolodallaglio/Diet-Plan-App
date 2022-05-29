@@ -7,6 +7,11 @@ public class SportyMen extends PersonPrototype{
         this.useProtein = useProtein;
     }
 
+    public SportyMen() {
+        super();
+    }
+
+
     public boolean isUseProtein() {
         return useProtein;
     }

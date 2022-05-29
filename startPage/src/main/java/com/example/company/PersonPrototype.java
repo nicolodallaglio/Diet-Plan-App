@@ -17,6 +17,10 @@ public class PersonPrototype {
         this.age = age;
     }
 
+    public PersonPrototype() {
+
+    }
+
     public void setHeight(float height) {
         this.height = height;
     }
@@ -55,8 +59,7 @@ public class PersonPrototype {
 
     public StringBuilder showData(){
         StringBuilder sb = new StringBuilder();
-        return sb.append("nome " + this.name + "età " + this.age + "peso " + this.weight + " e altezza " + this.height + "il bmi è " + BmiCalculated());
-
+        return sb.append("nome ").append(this.name).append("età ").append(this.age).append("peso ").append(this.weight).append(" e altezza ").append(this.height).append("il bmi è ").append(BmiCalculated());
     }
 
 
