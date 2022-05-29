@@ -1,29 +1,21 @@
 package com.example.startpage;
 
 import com.example.company.SportyMen;
-import com.example.company.*;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.DragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
-import java.security.spec.ECField;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -77,16 +69,19 @@ public class Controller implements Initializable {
     private Button nuovoAlimento;
     @FXML
     private Text textAlim;
+    @FXML
+    private Label errorLabel;
 
-    private String nome = "";
 
-    private String cognome= "";
+    private static String nome = "";
 
-    private float altezza;
+    private static String cognome= "";
 
-    private int peso;
+    private static float altezza;
 
-    private int eta;
+    private static int peso;
+
+    private static int eta = 0;
 
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -99,28 +94,29 @@ public class Controller implements Initializable {
         stage.setScene(new Scene(root));
     }
 
-    public void getInput(ActionEvent actionEvent){
-
-        nome=name.getText();
-        cognome=surname.getText();
-        peso=Integer.parseInt(weight.getText());
-        altezza=Float.parseFloat(height.getText());
-        eta=Integer.parseInt(age.getText());
-
-
-        System.out.println(nome);
-        System.out.println(cognome);
-        System.out.println(peso);
-        System.out.println(altezza);
-        System.out.println(eta);
+    public void getInput(ActionEvent actionEvent) {
+            try {
+                nome = name.getText();
+                cognome = surname.getText();
+                peso = Integer.parseInt(weight.getText());
+                altezza = Float.parseFloat(height.getText());
+                eta = Integer.parseInt(age.getText());
+            } catch (Exception e) {
+                errorLabel.setText("ERRORE:\n" + "inserire correttamente i dati");
+                getInput(actionEvent);
+            }
+        errorLabel.setText("");
     }
 
     public void analizzaAction(MouseEvent mouseEvent ) throws IOException {
+        if(errorLabel.getText().equals("ERRORE:\n" + "inserire correttamente i dati")){
 
-        Stage stage = (Stage) analizeData.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
+        } else {
+            Stage stage = (Stage) analizeData.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+            stage.setTitle("");
+            stage.setScene(new Scene(root));
+        }
     }
 
 
@@ -201,14 +197,18 @@ public class Controller implements Initializable {
 
     public void showBodyFat(ActionEvent actionEvent) throws IOException {
 
-        //SportyMen sportyMen = new SportyMen(nome,Integer.parseInt(peso),Float.parseFloat(altezza),Integer.parseInt(peso), true);
         SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
         StringBuilder sb = new StringBuilder();
-        bodyPer.setText(sb.append("Ecco i tuoi parametri: \n ").append(sportyMen.bodyFatSituation(13)).toString());
-
+        float bmi;
+        bmi = sportyMen.BmiCalculated();
+        bodyPer.setText(sb.append("Ecco i tuoi parametri:\n").append("La tua bodyfat è: ").append(sportyMen.bodyFatSituation((int)bmi)).toString());
     }
 
     public void next1(ActionEvent actionEvent) throws IOException {}
     public void next2(ActionEvent actionEvent) throws IOException {}
     public void next3(ActionEvent actionEvent) throws IOException {}
+    public void next4(ActionEvent actionEvent) throws IOException {}
+    public void next5(ActionEvent actionEvent) throws IOException {}
+    public void next6(ActionEvent actionEvent) throws IOException {}
+    public void next7(ActionEvent actionEvent) throws IOException {}
 }

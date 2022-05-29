@@ -7,14 +7,14 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="AnchorPane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+<AnchorPane fx:id="AnchorPane3" maxHeight="720.0" maxWidth="1080.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
-      <MenuBar fx:id="showMenuBar" layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+      <MenuBar fx:id="showMenuBar" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Opzioni">
             <items>
-              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeMenu" text="Close" />
                   <MenuItem fx:id="showData" mnemonicParsing="false" onAction="#mostraAlimenti" text="Mostra tutti gli alimenti" />
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeMenu" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -29,15 +29,15 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Label fx:id="bodyPer" layoutX="14.0" layoutY="133.0" prefHeight="134.0" prefWidth="355.0" />
+      <Label fx:id="bodyPer" layoutX="20.0" layoutY="88.0" prefHeight="192.0" prefWidth="363.0" />
       <Button fx:id="avanti1" layoutX="391.0" layoutY="60.0" mnemonicParsing="false" onAction="#next1" prefHeight="25.0" prefWidth="50.0" text="Day 1" />
-      <Button fx:id="indietro1" layoutX="43.0" layoutY="339.0" mnemonicParsing="false" onAction="#back1" text="Indietro" />
+      <Button fx:id="indietro1" layoutX="28.0" layoutY="653.0" mnemonicParsing="false" onAction="#back1" prefHeight="36.0" prefWidth="88.0" text="Indietro" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="28.0" />
       <Button fx:id="avanti2" layoutX="391.0" layoutY="95.0" mnemonicParsing="false" onAction="#next2" prefHeight="25.0" prefWidth="50.0" text="Day 2 " />
       <Button fx:id="avanti3" layoutX="391.0" layoutY="130.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="50.0" text="Day 3" />
-      <Button fx:id="avanti4" layoutX="391.0" layoutY="163.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="50.0" text="Day 4" />
-      <Button fx:id="avanti5" layoutX="391.0" layoutY="194.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="50.0" text="Day 5" />
-      <Button fx:id="avanti6" layoutX="391.0" layoutY="227.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="50.0" text="Day 6" />
-      <Button fx:id="avanti7" layoutX="391.0" layoutY="260.0" mnemonicParsing="false" onAction="#next3" prefHeight="25.0" prefWidth="50.0" text="Day 7" />
-      <Button fx:id="bodyButton" layoutX="51.0" layoutY="95.0" mnemonicParsing="false" onAction="#showBodyFat" prefHeight="25.0" prefWidth="100.0" text="bodyfat" />
+      <Button fx:id="avanti4" layoutX="391.0" layoutY="163.0" mnemonicParsing="false" onAction="#next4" prefHeight="25.0" prefWidth="50.0" text="Day 4" />
+      <Button fx:id="avanti5" layoutX="391.0" layoutY="194.0" mnemonicParsing="false" onAction="#next5" prefHeight="25.0" prefWidth="50.0" text="Day 5" />
+      <Button fx:id="avanti6" layoutX="391.0" layoutY="227.0" mnemonicParsing="false" onAction="#next6" prefHeight="25.0" prefWidth="50.0" text="Day 6" />
+      <Button fx:id="avanti7" layoutX="391.0" layoutY="260.0" mnemonicParsing="false" onAction="#next7" prefHeight="25.0" prefWidth="50.0" text="Day 7" />
+      <Button fx:id="bodyButton" layoutX="28.0" layoutY="60.0" mnemonicParsing="false" onAction="#showBodyFat" prefHeight="25.0" prefWidth="215.0" text="Clicca qui per visualizzare i tuoi dati" />
    </children>
 </AnchorPane>
