@@ -5,32 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showAlimenti.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/IPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/IPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/hello-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,9 +52,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage",
+    "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage/com/example/startpage",
     "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -80,26 +73,13 @@
       <recent name="com.example.startpage" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApplication">
+  <component name="RunManager" selected="Application.com.example.startpage.MainApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="progDieta" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.startpage.MainApplication" />
-      <module name="startPage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,8 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.startpage.MainApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.startpage.MainApplication" />
+      <module name="startPage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.MainApplication" />
+      <item itemvalue="Application.com.example.startpage.MainApplication" />
       <item itemvalue="Application.com.example.company.Main" />
       <item itemvalue="Application.Main" />
     </list>
@@ -183,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653824307879</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.1">
+      <created>1653829822415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653829822415</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

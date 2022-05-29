@@ -8,11 +8,17 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.DragEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -59,7 +65,18 @@ public class Controller implements Initializable {
     private Button avanti1;
     @FXML
     private Button indietro1;
-
+    @FXML
+    private MenuItem showData;
+    @FXML
+    private MenuBar showMenuBar;
+    @FXML
+    private ScrollPane scrollAlim;
+    @FXML
+    private Button indietro2;
+    @FXML
+    private Button nuovoAlimento;
+    @FXML
+    private Text textAlim;
 
     private String nome = "";
 
@@ -71,6 +88,9 @@ public class Controller implements Initializable {
 
     private int eta;
 
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
 
     public void premiperproseguire(ActionEvent actionEvent) throws IOException {
            Stage stage = (Stage) bottFirst.getScene().getWindow();
@@ -103,8 +123,6 @@ public class Controller implements Initializable {
         stage.setScene(new Scene(root));
     }
 
-    public void initialize(URL location, ResourceBundle resources) {
-    }
 
     public void donnaAction(ActionEvent actionEvent) throws IOException {
         sex.setText("donna");
@@ -133,7 +151,19 @@ public class Controller implements Initializable {
         System.exit(0);
     }
 
-    public void mostraAlimenti(ActionEvent actionEvent) throws IOException{
+    public void mostraAlimenti(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) showMenuBar.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showAlimenti.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
+    private AnchorPane ancorpane;
+    public void mostraData(MouseEvent mouseEvent) throws IOException {
+
+        scrollAlim.setPannable(true);
         com.example.model.Datasource datasource = new Datasource();
         if (!datasource.open()) {
             System.out.println("Non riesco ad aprire datasource");
@@ -141,19 +171,33 @@ public class Controller implements Initializable {
         }
         List<Alimenti> alimenti = datasource.queryAlimenti();
         if (alimenti == null) {
-            bodyPer.setText("Nessun alimento");
+            textAlim.setText("Nessun alimento");
             return;
         }
 
         StringBuilder sb= new StringBuilder();
         sb.append("Questi sono gli elementi presenti nel sistema: \n");
+
         for (Alimenti alimento : alimenti) {
             sb.append(alimento.getName()).append(", Calorie= ").append(alimento.getCalorie());
             sb.append("\n");
         }
-        bodyPer.setText(sb.toString());
+
+        scrollAlim.setContent(textAlim);
+        textAlim.setText(sb.toString());
+
     }
 
+    public void addAlimento(ActionEvent actionEvent) throws IOException {
+
+    }
+
+    public void back2(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro2.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
 
     public void showBodyFat(ActionEvent actionEvent) throws IOException {
 
