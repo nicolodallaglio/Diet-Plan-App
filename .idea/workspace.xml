@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/clickPNG.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-6.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-7.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/first-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/first-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage/com/example/startpage",
-    "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java",
+    "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/resources/com/example/startpage",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -70,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\resources\com\example\startpage" />
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\java" />
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src" />
     </key>
@@ -219,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653861194009</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.1">
+      <created>1653865418869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653865418869</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

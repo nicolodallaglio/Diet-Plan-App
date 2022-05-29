@@ -6,7 +6,6 @@ import com.example.company.SportyWomen;
 import com.example.company.WomenPerson;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
-import javafx.css.Style;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +15,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -71,6 +69,20 @@ public class Controller implements Initializable {
     @FXML
     private Button indietro2;
     @FXML
+    private Button indietro3;
+    @FXML
+    private Button indietro4;
+    @FXML
+    private Button indietro5;
+    @FXML
+    private Button indietro6;
+    @FXML
+    private Button indietro7;
+    @FXML
+    private Button indietro8;
+    @FXML
+    private Button indietro9;
+    @FXML
     private Button nuovoAlimento;
     @FXML
     private Text textAlim;
@@ -78,16 +90,12 @@ public class Controller implements Initializable {
     private Label errorLabel;
     @FXML
     private Text mainMenuText;
-
+    @FXML
+    private AnchorPane ancorpane;
 
     private static String nome = "";
-
-    private static String cognome= "";
-
     private static float altezza;
-
     private static int peso;
-
     private static int eta = 0;
     private static String sesso= "";
     private static String attivita = "";
@@ -106,7 +114,7 @@ public class Controller implements Initializable {
     public void getInput(ActionEvent actionEvent) {
             try {
                 nome = name.getText();
-                cognome = surname.getText();
+                String cognome = surname.getText();
                 peso = Integer.parseInt(weight.getText());
                 altezza = Float.parseFloat(height.getText());
                 if(altezza<1.5 || peso<40){
@@ -136,7 +144,6 @@ public class Controller implements Initializable {
             stage.setScene(new Scene(root));
         }
     }
-
 
     public void donnaAction(ActionEvent actionEvent) throws IOException {
         sex.setText("donna");
@@ -177,8 +184,6 @@ public class Controller implements Initializable {
         stage.show();
     }
 
-    @FXML
-    private AnchorPane ancorpane;
     public void mostraData(MouseEvent mouseEvent) throws IOException {
 
         scrollAlim.setPannable(true);
@@ -201,7 +206,6 @@ public class Controller implements Initializable {
 
         scrollAlim.setContent(textAlim);
         textAlim.setText(sb.toString());
-
     }
 
     public void addAlimento(ActionEvent actionEvent) throws IOException {
@@ -236,7 +240,6 @@ public class Controller implements Initializable {
           MenPerson menPerson = new MenPerson(nome, peso, altezza, eta);
           bmi = Math.round((menPerson.BmiCalculated()));
           bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(menPerson.bodyFatSituation((int)bmi)).toString());
-
       }
       else
       {
@@ -246,11 +249,104 @@ public class Controller implements Initializable {
       }
     }
 
-    public void next1(ActionEvent actionEvent) throws IOException {}
-    public void next2(ActionEvent actionEvent) throws IOException {}
-    public void next3(ActionEvent actionEvent) throws IOException {}
-    public void next4(ActionEvent actionEvent) throws IOException {}
-    public void next5(ActionEvent actionEvent) throws IOException {}
-    public void next6(ActionEvent actionEvent) throws IOException {}
-    public void next7(ActionEvent actionEvent) throws IOException {}
+    @FXML
+    private Button getAvanti1;
+    @FXML
+    private Button getAvanti2;
+    @FXML
+    private Button getAvanti3;
+    @FXML
+    private Button getAvanti4;
+    @FXML
+    private Button getAvanti5;
+    @FXML
+    private Button getAvanti6;
+    @FXML
+    private Button getAvanti7;
+
+
+    public void next1(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-1.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back3(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro3.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next2(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-2.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back4(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro4.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next3(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-3.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back5(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro5.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next4(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-4.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back6(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro6.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next5(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-5.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back7(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro7.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next6(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-6.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back8(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro8.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void next7(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) avanti1.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("day-7.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
+    public void back9(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) indietro9.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
+        stage.setTitle("");
+        stage.setScene(new Scene(root));
+    }
 }

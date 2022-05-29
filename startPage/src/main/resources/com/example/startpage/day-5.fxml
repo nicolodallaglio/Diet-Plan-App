@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="720.0" maxWidth="1080.0" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@DarkTheme.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="1225.0" layoutX="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@DarkTheme.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="indietro7" layoutX="39.0" layoutY="648.0" mnemonicParsing="false" onAction="#back7" prefHeight="32.0" prefWidth="72.0" style="-fx-background-color: azure;" text="Torna al menu principale" />
+
+   </children>
+</AnchorPane>
