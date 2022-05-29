@@ -114,7 +114,7 @@ public class Controller implements Initializable {
 
     public void analizzaAction(MouseEvent mouseEvent ) throws IOException {
         if(errorLabel.getText().equals("ERRORE:\n" + "inserire correttamente i dati")){
-
+            //attendo i dati corretti
         } else {
             Stage stage = (Stage) analizeData.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));

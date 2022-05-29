@@ -46,7 +46,7 @@
             <Font name="System Bold Italic" size="18.0" />
          </font></Label>
       <Button fx:id="indietro1" layoutX="71.0" layoutY="637.0" mnemonicParsing="false" onAction="#back1" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: azure;" text="Indietro" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="71.0" />
-      <Text fx:id="mainMenuText" fill="WHITE" layoutX="28.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="569.0">
+      <Text fx:id="mainMenuText" fill="WHITE" layoutX="28.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="819.0">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
