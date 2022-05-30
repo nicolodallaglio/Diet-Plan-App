@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
@@ -69,8 +70,6 @@ public class Controller implements Initializable {
     private ScrollPane scrollAlim;
     @FXML
     private Button indietro2;
-    @FXML
-    private Button indietro3;
     @FXML
     private Button indietro4;
     @FXML
@@ -283,38 +282,34 @@ public class Controller implements Initializable {
     @FXML
     private Button getAvanti7;
     @FXML
-    private Label labelDay1;
+    private Button anchorPane3;
 
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
     public void next1(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) avanti1.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("day-1.fxml"));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("day-1.fxml"));
+        root = loader.load();
+
+        Controller1 scene2Controller = loader.getController();
+        scene2Controller.method1(nome,peso,altezza,eta);
+
+        //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
-    public void method1(MouseEvent mouseEvent) throws IOException{
-        StringBuilder sb = new StringBuilder();
-        Fat fat = new Fat(null);
-        carbohydrates carbohydrates = new carbohydrates(null);
-        Protein protein = new Protein(null);
-        SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
-        sb.append(sportyMen.showShortMenu(fat, carbohydrates, protein));
-        labelDay1.setText(sb.toString());
-    }
 
-    public void back3(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) indietro3.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
-    }
     public void next2(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) avanti1.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("day-2.fxml"));
         stage.setTitle("");
         stage.setScene(new Scene(root));
     }
+
     public void back4(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) indietro4.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
