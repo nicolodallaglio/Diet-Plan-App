@@ -10,32 +10,34 @@ public class FruitDecorator extends MealDecorator{
         super(nameDecorator);
     }
 
-    public void chooseFood(){
+    public StringBuilder chooseFood(){
         Datasource datasource = new Datasource();
         if(!datasource.open()){
             System.out.println("Non riesco ad aprire datasource");
-            return;
+            return null;
         }
 
         List<Alimenti> frutta = datasource.queryFrutta();
         if(frutta == null){
             System.out.println("Nessun frutto");
-            return;
+            return null;
         }
-
+        StringBuilder sb = new StringBuilder();
         int n = (int) (Math.random() * 5);
         int i = 0;
         for(Alimenti alimento : frutta) {
             i++;
             if (i == n) {
-                System.out.println(alimento.getName());
+                sb.append(alimento.getName());
             }
         }
-
         datasource.close();
+        return sb;
     }
-    public void showFruit(){
-        System.out.println("\nspuntino ");
-        chooseFood();
+
+    public StringBuilder showFruit(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nSpuntino: ").append(chooseFood());
+        return sb;
     }
 }

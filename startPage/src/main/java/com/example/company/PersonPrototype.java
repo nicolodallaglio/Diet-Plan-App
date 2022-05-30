@@ -57,15 +57,11 @@ public class PersonPrototype {
         StringBuilder sb = new StringBuilder();
         return sb.append("nome ").append(this.name).append("età ").append(this.age).append("peso ").append(this.weight).append(" e altezza ").append(this.height).append("il bmi è ").append(BmiCalculated());
     }
-
     public float BmiCalculated(){
         float bmi;
         bmi = weight / ( height * height);
         return bmi;
-
     }
-
-
     public String bodyFatSituation(int bmi){
         if (bmi > 30.01){
             return ("obesità di prima classe.");
@@ -82,19 +78,21 @@ public class PersonPrototype {
         }
     }
 
-   public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
+   public StringBuilder showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
+        StringBuilder sb = new StringBuilder();
        FruitDecorator fruitDecorator = new FruitDecorator(null);
        MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
        VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
        for (int i = 0; i < 7; i++) {
-           System.out.println("\ngiorno " + (i + 1) + " della dieta");
-           fruitDecorator.showFruit();
-           mealRecipe.PricipleMeal(this);
-           vegetableDecorator.showVegetable();
-           fruitDecorator.showFruit();
-           mealRecipe.PricipleMeal(this);
-           vegetableDecorator.showVegetable();
+           sb.append("\ngiorno " + (i + 1) + " della dieta");
+           sb.append(fruitDecorator.showFruit());
+           sb.append(mealRecipe.PricipleMeal(this));
+           sb.append(vegetableDecorator.showVegetable());
+           sb.append(fruitDecorator.showFruit());
+           sb.append(mealRecipe.PricipleMeal(this));
+           sb.append(vegetableDecorator.showVegetable());
        }
+       return sb;
    }
 }
 

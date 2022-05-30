@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="720.0" maxWidth="1080.0" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+<AnchorPane maxHeight="720.0" maxWidth="1080.0" onMouseEntered="#method1" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1225.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -17,6 +19,11 @@
             <Image url="@DarkTheme.png" />
          </image>
       </ImageView>
+      <Label fx:id="labelDay1" layoutX="11.0" layoutY="36.0" prefHeight="564.0" prefWidth="1068.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
       <Button fx:id="indietro3" layoutX="39.0" layoutY="648.0" mnemonicParsing="false" onAction="#back3" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: azure;" text="Torna al menu principale" />
 
    </children>

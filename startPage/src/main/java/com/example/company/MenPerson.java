@@ -61,23 +61,25 @@ public class MenPerson extends PersonPrototype implements IPerson{
     }
 
     @Override
-    public void showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
+    public StringBuilder showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
         TypesOfCooking typesOfCooking = new TypesOfCooking();
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 7; i++) {
-            System.out.println("\ngiorno " + (i + 1) + " della dieta");
-            breakfastRecipe.Breakfast();
-            fruitDecorator.showFruit();
-            mealRecipe.PricipleMeal(this);
-            vegetableDecorator.showVegetable();
-            typesOfCooking.TypesOfCookingFunction();
-            fruitDecorator.showFruit();
-            mealRecipe.PricipleMeal(this);
-            vegetableDecorator.showVegetable();
-            typesOfCooking.TypesOfCookingFunction();
+            sb.append("\ngiorno " + (i + 1) + " della dieta");
+            sb.append("Colazione: ").append(breakfastRecipe.Breakfast());
+            sb.append(fruitDecorator.showFruit());
+            sb.append(mealRecipe.PricipleMeal(this));
+            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+            sb.append(vegetableDecorator.showVegetable());
+            sb.append(fruitDecorator.showFruit());
+            sb.append(mealRecipe.PricipleMeal(this));
+            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+            sb.append(vegetableDecorator.showVegetable());
         }
+        return sb;
     }
 }

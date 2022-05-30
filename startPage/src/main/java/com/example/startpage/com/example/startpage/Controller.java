@@ -1,9 +1,6 @@
 package com.example.startpage;
 
-import com.example.company.MenPerson;
-import com.example.company.SportyMen;
-import com.example.company.SportyWomen;
-import com.example.company.WomenPerson;
+import com.example.company.*;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
 import javafx.event.ActionEvent;
@@ -263,6 +260,8 @@ public class Controller implements Initializable {
     private Button getAvanti6;
     @FXML
     private Button getAvanti7;
+    @FXML
+    private Label labelDay1;
 
 
     public void next1(ActionEvent actionEvent) throws IOException {
@@ -271,6 +270,17 @@ public class Controller implements Initializable {
         stage.setTitle("");
         stage.setScene(new Scene(root));
     }
+
+    public void method1(MouseEvent mouseEvent) throws IOException{
+        StringBuilder sb = new StringBuilder();
+        Fat fat = new Fat(null);
+        carbohydrates carbohydrates = new carbohydrates(null);
+        Protein protein = new Protein(null);
+        SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
+        sb.append(sportyMen.showShortMenu(fat, carbohydrates, protein));
+        labelDay1.setText(sb.toString());
+    }
+
     public void back3(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) indietro3.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));

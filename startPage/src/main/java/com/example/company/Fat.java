@@ -10,111 +10,85 @@ public class Fat extends BaseMeal{
         super(nameFood);
     }
 
-    public float calculatePortion(PersonPrototype personPrototype){
-        System.out.println("grassi del giorno prototipo:");
-        chooseFood();
+    public StringBuilder calculatePortion(PersonPrototype personPrototype){
+        StringBuilder sb= new StringBuilder();
+        sb.append("grassi del giorno prototipo:").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        System.out.println("grammi da mangiare durante la giornata " + portion);
-        return portion;
+        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        return sb;
     }
 
-    public float calculatePortion(WomenPerson personPrototype){
-        System.out.println("grassi del giorno per una donna :");
-        chooseFood();
+    public StringBuilder calculatePortion(WomenPerson personPrototype){
+        StringBuilder sb= new StringBuilder();
+        sb.append("grassi del giorno per una donna:").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        System.out.println("grammi da mangiare durante la giornata " + portion);
-        return portion;
+        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        return sb;
     }
-    public float calculatePortion(SportyWomen personPrototype){
-        System.out.println("grassi del giorno per una donna sportiva:");
-        chooseFood(personPrototype);
+    public StringBuilder calculatePortion(SportyWomen personPrototype){
+        StringBuilder sb= new StringBuilder();
+        sb.append("grassi del giorno per una donna sportiva: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        System.out.println("grammi da mangiare durante la giornata " + portion);
-        return portion;
-    }
-
-    public float calculatePortion(MenPerson personPrototype){
-        System.out.println("grassi del giorno per un uomo:");
-        chooseFood();
-        float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        System.out.println("grammi da mangiare durante la giornata " + portion);
-        return portion;
+        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        return sb;
     }
 
-    public float calculatePortion(SportyMen personPrototype){
-        System.out.println("grassi del giorno per un uomo sportivo:");
-        chooseFood(personPrototype);
+    public StringBuilder calculatePortion(MenPerson personPrototype){
+        StringBuilder sb= new StringBuilder();
+        sb.append("grassi del giorno per un uomo: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        System.out.println("grammi da mangiare durante la giornata " + portion);
-        return portion;
+        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        return sb;
     }
 
-    public void chooseFood(){
+    public StringBuilder calculatePortion(SportyMen personPrototype){
+        StringBuilder sb= new StringBuilder();
+        sb.append("grassi del giorno per una uomo sportivo: ").append(chooseFood());
+        float portion = (float) (personPrototype.getWeight()*0.00005*1000);
+        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        return sb;
+    }
+
+    public StringBuilder chooseFood(){
         Datasource datasource = new Datasource();
         if(!datasource.open()){
             System.out.println("Non riesco ad aprire datasource");
-            return;
+            return null;
         }
 
         List<Alimenti> grassi = datasource.queryGrassi();
         if(grassi == null){
             System.out.println("Nessun grasso");
-            return;
+            return null;
         }
 
+        StringBuilder sb = new StringBuilder();
         int n = (int) (Math.random() * 8);
         int i = 0;
         for(Alimenti alimento : grassi) {
             i++;
             if (i == n) {
-                System.out.println(alimento.getName());
+               sb.append(alimento.getName());
             }
         }
-
         datasource.close();
+        return sb;
     }
 
-    public void chooseFood(SportyMen sportyMen){
+    public StringBuilder chooseFood(SportyMen sportyMen){
         Datasource datasource = new Datasource();
         if(!datasource.open()){
             System.out.println("Non riesco ad aprire datasource");
-            return;
+            return null;
         }
 
         List<Alimenti> grassi = datasource.queryGrassi();
         if(grassi == null){
             System.out.println("Nessun grasso");
-            return;
+            return null;
         }
 
-        int n = (int) (Math.random() * 8);
-        int i = 0;
-        for(Alimenti alimento : grassi) {
-            i++;
-            if (i == n) {
-                if (alimento.getName().equalsIgnoreCase("burro")){
-                    System.out.println("olio di oliva");
-                }else{
-                    System.out.println(alimento.getName());
-                }
-            }
-        }
-
-        datasource.close();
-    }
-
-    public void chooseFood(WomenPerson womenPerson){
-        Datasource datasource = new Datasource();
-        if(!datasource.open()){
-            System.out.println("Non riesco ad aprire datasource");
-            return;
-        }
-
-        List<Alimenti> grassi = datasource.queryGrassi();
-        if(grassi == null){
-            System.out.println("Nessun grasso");
-            return;
-        }
+        StringBuilder sb=new StringBuilder();
 
         int n = (int) (Math.random() * 8);
         int i = 0;
@@ -122,13 +96,43 @@ public class Fat extends BaseMeal{
             i++;
             if (i == n) {
                 if (alimento.getName().equalsIgnoreCase("burro")){
-                    System.out.println("olio di oliva");
+                    sb.append("olio di oliva");
                 }else{
-                    System.out.println(alimento.getName());
+                    sb.append(alimento.getName());
                 }
             }
         }
-
         datasource.close();
+        return sb;
+    }
+
+    public StringBuilder chooseFood(WomenPerson womenPerson){
+        Datasource datasource = new Datasource();
+        if(!datasource.open()){
+            System.out.println("Non riesco ad aprire datasource");
+            return null;
+        }
+
+        List<Alimenti> grassi = datasource.queryGrassi();
+        if(grassi == null){
+            System.out.println("Nessun grasso");
+            return null;
+        }
+
+        StringBuilder sb= new StringBuilder();
+        int n = (int) (Math.random() * 8);
+        int i = 0;
+        for(Alimenti alimento : grassi) {
+            i++;
+            if (i == n) {
+                if (alimento.getName().equalsIgnoreCase("burro")){
+                    sb.append("olio di oliva");
+                }else{
+                    sb.append(alimento.getName());
+                }
+            }
+        }
+        datasource.close();
+        return sb;
     }
 }

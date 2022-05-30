@@ -23,38 +23,43 @@ public class MealRecipe{
         return fat;
     }
 
-    public void PricipleMeal(PersonPrototype personPrototype){
-        System.out.println("\npasto principale:");
+    public String PricipleMeal(PersonPrototype personPrototype){
+        String sb=("\nPasto principale: ");
         fat.calculatePortion(personPrototype);
         carbohydrates.calculatePortion(personPrototype);
         protein.calculatePortion(personPrototype);
+        return sb;
     }
 
-    public void PricipleMeal(WomenPerson personPrototype){
-        System.out.println("\npasto principale per woman:");
+    public String PricipleMeal(WomenPerson personPrototype){
+        String sb=("\nPasto principale per donna: ");
         fat.calculatePortion(personPrototype);
         carbohydrates.calculatePortion(personPrototype);
         protein.calculatePortion(personPrototype);
+        return sb;
     }
 
-    public void PricipleMeal(SportyWomen personPrototype){
-        System.out.println("\npasto principale per sporty woman:");
+    public String PricipleMeal(SportyWomen personPrototype){
+        String sb=("\nPasto principale per donna sportiva: ");
         fat.calculatePortion(personPrototype);
         carbohydrates.calculatePortion(personPrototype);
         protein.calculatePortion(personPrototype);
+        return sb;
     }
 
-    public void PricipleMeal(MenPerson personPrototype){
-        System.out.println("\npasto principale per men:");
+    public String PricipleMeal(MenPerson personPrototype){
+        String sb=("\nPasto principale per uomo sportivo: ");
         fat.calculatePortion(personPrototype);
         carbohydrates.calculatePortion(personPrototype);
         protein.calculatePortion(personPrototype);
+        return sb;
     }
 
-    public void PricipleMeal(SportyMen personPrototype){
-        System.out.println("\npasto principale per sporty men:");
+    public String PricipleMeal(SportyMen personPrototype){
+        String sb=("\nPasto principale per uomo sportivo:");
         fat.calculatePortion(personPrototype);
         carbohydrates.calculatePortion(personPrototype);
         protein.calculatePortion(personPrototype);
+        return sb;
     }
 }

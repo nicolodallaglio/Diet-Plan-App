@@ -10,33 +10,36 @@ public class VegetableDecorator extends MealDecorator{
         super(nameDecorator);
     }
 
-    public void chooseFood(){
+    public StringBuilder chooseFood(){
         Datasource datasource = new Datasource();
         if(!datasource.open()){
             System.out.println("Non riesco ad aprire datasource");
-            return;
+            return null;
         }
 
         List<Alimenti> verdure = datasource.queryVerdure();
         if(verdure == null){
             System.out.println("Nessuna verdura");
-            return;
+            return null;
         }
+
+        StringBuilder sb = new StringBuilder();
 
         int n = (int) (Math.random() * 5);
         int i = 0;
         for(Alimenti alimento : verdure) {
             i++;
             if (i == n) {
-                System.out.println(alimento.getName());
+                sb.append(alimento.getName());
             }
         }
-
         datasource.close();
+        return sb;
     }
 
-    public void showVegetable(){
-        System.out.println("verdura:");
-        chooseFood();
+    public StringBuilder showVegetable(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nVerdura: ").append(chooseFood());
+        return sb;
     }
 }
