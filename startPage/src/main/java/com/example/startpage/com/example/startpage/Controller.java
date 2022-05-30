@@ -3,12 +3,16 @@ package com.example.startpage;
 import com.example.company.*;
 import com.example.model.Alimenti;
 import com.example.model.Datasource;
+import javafx.beans.binding.Bindings;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -216,10 +220,28 @@ public class Controller implements Initializable {
         stage.setScene(new Scene(root));
     }
 
+    @FXML
+    private PieChart pieChart;
+
     public void showBodyFat(MouseEvent mouseEvent) throws IOException {
         mainMenuText.setText("Eccoci nel menu principale, " + nome + "!\n"+ "Troverai i pasti per tutta la settimana e ulteriori informazioni utili.");
         StringBuilder sb = new StringBuilder();
         double bmi;
+
+        //PIE_CHART
+        if(pieChart.getData().isEmpty()) {
+            ObservableList<PieChart.Data> pieChartData =
+                    FXCollections.observableArrayList(
+                            new PieChart.Data("Massa muscolare", Math.ceil((1.10*peso)-128*( (peso*peso) / ((100 * altezza)*(100 * altezza))))),
+                            new PieChart.Data("Massa grassa",Math.ceil(peso-((1.10*peso)-128*( (peso*peso) / ((100 * altezza)*(100 * altezza)))))));
+            pieChartData.forEach(data ->
+                    data.nameProperty().bind(
+                            Bindings.concat(
+                                    data.getName(), ": ", data.pieValueProperty()
+                            )
+                    ));
+            pieChart.getData().addAll(pieChartData);
+        }
 
       if(attivita.equals("Sì") && sesso.equals("uomo")){
         SportyMen sportyMen = new SportyMen(nome, peso, altezza, eta, true);
@@ -230,7 +252,7 @@ public class Controller implements Initializable {
       {
           SportyWomen sportyWomen = new SportyWomen(nome, peso, altezza, eta);
           bmi = Math.round((sportyWomen.BmiCalculated()));
-          bodyPer.setText(sb.append("No tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(sportyWomen.bodyFatSituation((int)bmi)).toString());
+          bodyPer.setText(sb.append("Il tuo indice di massa corporea: ").append(bmi).append("\n").append("ovvero: ").append(sportyWomen.bodyFatSituation((int)bmi)).toString());
       }
       else if (attivita.equals("No") && sesso.equals("uomo"))
       {
