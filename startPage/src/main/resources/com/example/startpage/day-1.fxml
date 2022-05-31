@@ -2,6 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,12 +22,22 @@
             <Image url="@DarkTheme.png" />
          </image>
       </ImageView>
-      <Label fx:id="labelDay1" alignment="TOP_LEFT" layoutX="30.0" layoutY="24.0" lineSpacing="2.0" prefHeight="605.0" prefWidth="1068.0" textFill="WHITE" wrapText="true">
+      <Label fx:id="labelDay1" alignment="TOP_LEFT" layoutX="30.0" layoutY="61.0" lineSpacing="2.0" prefHeight="560.0" prefWidth="1062.0" textFill="WHITE" wrapText="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Button fx:id="indietro3" layoutX="39.0" layoutY="648.0" mnemonicParsing="false" onAction="#back3" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: azure;" text="Torna al menu principale" />
+      <MenuBar style="-fx-background-color: azure;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Scarica il file" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
 
    </children>
 </AnchorPane>

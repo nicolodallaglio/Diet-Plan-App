@@ -20,7 +20,7 @@ public class Fat extends BaseMeal{
 
     public StringBuilder calculatePortion(WomenPerson personPrototype){
         StringBuilder sb= new StringBuilder();
-        sb.append("-fonte di grassi:").append(chooseFood());
+        sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
         sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;

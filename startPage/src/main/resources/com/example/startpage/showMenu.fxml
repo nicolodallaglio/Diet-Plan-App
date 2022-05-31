@@ -69,32 +69,32 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti2" mnemonicParsing="false" onAction="#next2" prefHeight="107.0" prefWidth="147.0" style="-fx-background-color: tomato;" text="Day 2 " GridPane.columnIndex="2">
+            <Button fx:id="avanti2" mnemonicParsing="false" onAction="#next1" prefHeight="107.0" prefWidth="147.0" style="-fx-background-color: tomato;" text="Day 2 " GridPane.columnIndex="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti3" mnemonicParsing="false" onAction="#next3" prefHeight="119.0" prefWidth="102.0" style="-fx-background-color: tomato;" text="Day 3" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="avanti3" mnemonicParsing="false" onAction="#next1" prefHeight="119.0" prefWidth="102.0" style="-fx-background-color: tomato;" text="Day 3" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti4" mnemonicParsing="false" onAction="#next4" prefHeight="110.0" prefWidth="164.0" style="-fx-background-color: tomato;" text="Day 4" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="avanti4" mnemonicParsing="false" onAction="#next1" prefHeight="110.0" prefWidth="164.0" style="-fx-background-color: tomato;" text="Day 4" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti5" mnemonicParsing="false" onAction="#next5" prefHeight="101.0" prefWidth="163.0" style="-fx-background-color: gold;" text="Day 5" GridPane.rowIndex="2">
+            <Button fx:id="avanti5" mnemonicParsing="false" onAction="#next1" prefHeight="101.0" prefWidth="163.0" style="-fx-background-color: gold;" text="Day 5" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti6" mnemonicParsing="false" onAction="#next6" prefHeight="110.0" prefWidth="183.0" style="-fx-background-color: gold;" text="Day 6" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="avanti6" mnemonicParsing="false" onAction="#next1" prefHeight="110.0" prefWidth="183.0" style="-fx-background-color: gold;" text="Day 6" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="avanti7" mnemonicParsing="false" onAction="#next7" prefHeight="95.0" prefWidth="108.0" style="-fx-background-color: gold;" text="Day 7" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="avanti7" mnemonicParsing="false" onAction="#next1" prefHeight="95.0" prefWidth="108.0" style="-fx-background-color: gold;" text="Day 7" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
