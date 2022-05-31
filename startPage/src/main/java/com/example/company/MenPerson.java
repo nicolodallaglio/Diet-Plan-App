@@ -68,18 +68,16 @@ public class MenPerson extends PersonPrototype implements IPerson{
         TypesOfCooking typesOfCooking = new TypesOfCooking();
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 7; i++) {
-            sb.append("\ngiorno " + (i + 1) + " della dieta");
-            sb.append("Colazione: ").append(breakfastRecipe.Breakfast());
-            sb.append(fruitDecorator.showFruit());
-            sb.append(mealRecipe.PricipleMeal(this));
-            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
-            sb.append(vegetableDecorator.showVegetable());
-            sb.append(fruitDecorator.showFruit());
-            sb.append(mealRecipe.PricipleMeal(this));
-            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
-            sb.append(vegetableDecorator.showVegetable());
-        }
+        sb.append("MENU' DEL GIORNO\n");
+        sb.append("\n1) Colazione: ").append(breakfastRecipe.Breakfast());
+        sb.append(fruitDecorator.showFruit());
+        sb.append("\n2) Pranzo:\n").append(mealRecipe.PricipleMeal(this));
+        sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+        sb.append(vegetableDecorator.showVegetable());
+        sb.append(fruitDecorator.showFruit());
+        sb.append("\n3) Cena:\n ").append(mealRecipe.PricipleMeal(this));
+        sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+        sb.append(vegetableDecorator.showVegetable());
         return sb;
     }
 }

@@ -14,38 +14,38 @@ public class Fat extends BaseMeal{
         StringBuilder sb= new StringBuilder();
         sb.append("grassi del giorno prototipo:").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        sb.append(" grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;
     }
 
     public StringBuilder calculatePortion(WomenPerson personPrototype){
         StringBuilder sb= new StringBuilder();
-        sb.append("grassi del giorno per una donna:").append(chooseFood());
+        sb.append("-fonte di grassi:").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;
     }
     public StringBuilder calculatePortion(SportyWomen personPrototype){
         StringBuilder sb= new StringBuilder();
-        sb.append("grassi del giorno per una donna sportiva: ").append(chooseFood());
+        sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;
     }
 
     public StringBuilder calculatePortion(MenPerson personPrototype){
         StringBuilder sb= new StringBuilder();
-        sb.append("grassi del giorno per un uomo: ").append(chooseFood());
+        sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;
     }
 
     public StringBuilder calculatePortion(SportyMen personPrototype){
         StringBuilder sb= new StringBuilder();
-        sb.append("grassi del giorno per una uomo sportivo: ").append(chooseFood());
+        sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append("grammi da mangiare durante la giornata ").append(portion);
+        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         return sb;
     }
 
@@ -91,7 +91,7 @@ public class Fat extends BaseMeal{
         StringBuilder sb=new StringBuilder();
 
         int n = (int) (Math.random() * 8);
-        int i = 0;
+        int i = 1;
         for(Alimenti alimento : grassi) {
             i++;
             if (i == n) {

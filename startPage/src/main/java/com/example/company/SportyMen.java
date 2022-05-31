@@ -93,13 +93,13 @@ public class SportyMen extends PersonPrototype{
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
         StringBuilder sb= new StringBuilder();
         sb.append("MENU' DEL GIORNO CON INCLUSO ALLENAMENTO\n");
-        sb.append("\nColazione: ").append(breakfastRecipe.SportyBreakfast());
+        sb.append("\n1) Colazione: ").append(breakfastRecipe.SportyBreakfast());
         sb.append(fruitDecorator.showFruit());
-        sb.append(mealRecipe.PricipleMeal(this));
+        sb.append("\n2) Pranzo:\n").append(mealRecipe.PricipleMeal(this));
         sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
         sb.append(vegetableDecorator.showVegetable());
         sb.append(fruitDecorator.showFruit());
-        sb.append(mealRecipe.PricipleMeal(this));
+        sb.append("\n3) Cena:\n").append(mealRecipe.PricipleMeal(this));
         sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
         sb.append(vegetableDecorator.showVegetable());
         return sb;

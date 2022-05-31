@@ -293,7 +293,7 @@ public class Controller implements Initializable {
         root = loader.load();
 
         Controller1 scene2Controller = loader.getController();
-        scene2Controller.method1(nome,peso,altezza,eta);
+        scene2Controller.method1(nome,peso,altezza,eta,sesso,attivita);
 
         //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();

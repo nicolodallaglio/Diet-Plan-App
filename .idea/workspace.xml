@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Fat.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Fat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MealRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MealRecipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/MenPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/PersonPrototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyMen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/SportyWomen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/VegetableDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/VegetableDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/WomenPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/carbohydrates.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/carbohydrates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller1.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Fat.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Fat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MealRecipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MealRecipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/MenPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/PersonPrototype.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyMen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/SportyWomen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/VegetableDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/VegetableDecorator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/WomenPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/carbohydrates.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/carbohydrates.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653940186069</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.1">
+      <created>1653950069305</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1653950069305</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

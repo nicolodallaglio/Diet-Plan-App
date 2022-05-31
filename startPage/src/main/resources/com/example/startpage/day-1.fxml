@@ -19,9 +19,9 @@
             <Image url="@DarkTheme.png" />
          </image>
       </ImageView>
-      <Label fx:id="labelDay1" layoutX="11.0" layoutY="36.0" prefHeight="564.0" prefWidth="1068.0" textFill="WHITE">
+      <Label fx:id="labelDay1" alignment="TOP_LEFT" layoutX="30.0" layoutY="24.0" lineSpacing="2.0" prefHeight="605.0" prefWidth="1068.0" textFill="WHITE" wrapText="true">
          <font>
-            <Font name="System Bold" size="22.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Button fx:id="indietro3" layoutX="39.0" layoutY="648.0" mnemonicParsing="false" onAction="#back3" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: azure;" text="Torna al menu principale" />

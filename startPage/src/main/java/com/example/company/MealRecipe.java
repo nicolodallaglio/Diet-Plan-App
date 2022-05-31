@@ -23,43 +23,44 @@ public class MealRecipe{
         return fat;
     }
 
-    public String PricipleMeal(PersonPrototype personPrototype){
-        String sb=("\nPasto principale: ");
-        fat.calculatePortion(personPrototype);
-        carbohydrates.calculatePortion(personPrototype);
-        protein.calculatePortion(personPrototype);
+    public StringBuilder PricipleMeal(PersonPrototype personPrototype){
+        StringBuilder sb = new StringBuilder();
+        sb.append("\nPasto principale: ");
+        sb.append(fat.calculatePortion(personPrototype));
+        sb.append(carbohydrates.calculatePortion(personPrototype));
+        sb.append(protein.calculatePortion(personPrototype));
         return sb;
     }
 
-    public String PricipleMeal(WomenPerson personPrototype){
-        String sb=("\nPasto principale per donna: ");
-        fat.calculatePortion(personPrototype);
-        carbohydrates.calculatePortion(personPrototype);
-        protein.calculatePortion(personPrototype);
+    public StringBuilder PricipleMeal(WomenPerson personPrototype){
+        StringBuilder sb = new StringBuilder();
+        sb.append(fat.calculatePortion(personPrototype));
+        sb.append(carbohydrates.calculatePortion(personPrototype));
+        sb.append(protein.calculatePortion(personPrototype));
         return sb;
     }
 
-    public String PricipleMeal(SportyWomen personPrototype){
-        String sb=("\nPasto principale per donna sportiva: ");
-        fat.calculatePortion(personPrototype);
-        carbohydrates.calculatePortion(personPrototype);
-        protein.calculatePortion(personPrototype);
+    public StringBuilder PricipleMeal(SportyWomen personPrototype){
+        StringBuilder sb = new StringBuilder();
+        sb.append(fat.calculatePortion(personPrototype));
+        sb.append(carbohydrates.calculatePortion(personPrototype));
+        sb.append(protein.calculatePortion(personPrototype));
         return sb;
     }
 
-    public String PricipleMeal(MenPerson personPrototype){
-        String sb=("\nPasto principale per uomo sportivo: ");
-        fat.calculatePortion(personPrototype);
-        carbohydrates.calculatePortion(personPrototype);
-        protein.calculatePortion(personPrototype);
+    public StringBuilder PricipleMeal(MenPerson personPrototype){
+        StringBuilder sb = new StringBuilder();
+        sb.append(fat.calculatePortion(personPrototype));
+        sb.append(carbohydrates.calculatePortion(personPrototype));
+        sb.append(protein.calculatePortion(personPrototype));
         return sb;
     }
 
-    public String PricipleMeal(SportyMen personPrototype){
-        String sb=("\nPasto principale per uomo sportivo:");
-        fat.calculatePortion(personPrototype);
-        carbohydrates.calculatePortion(personPrototype);
-        protein.calculatePortion(personPrototype);
+    public StringBuilder PricipleMeal(SportyMen personPrototype){
+        StringBuilder sb = new StringBuilder();
+        sb.append(fat.calculatePortion(personPrototype));
+        sb.append(carbohydrates.calculatePortion(personPrototype));
+        sb.append(protein.calculatePortion(personPrototype));
         return sb;
     }
 }

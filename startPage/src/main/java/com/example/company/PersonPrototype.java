@@ -83,15 +83,13 @@ public class PersonPrototype {
        FruitDecorator fruitDecorator = new FruitDecorator(null);
        MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
        VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
-       for (int i = 0; i < 7; i++) {
-           sb.append("\ngiorno " + (i + 1) + " della dieta");
            sb.append(fruitDecorator.showFruit());
            sb.append(mealRecipe.PricipleMeal(this));
            sb.append(vegetableDecorator.showVegetable());
            sb.append(fruitDecorator.showFruit());
            sb.append(mealRecipe.PricipleMeal(this));
            sb.append(vegetableDecorator.showVegetable());
-       }
+
        return sb;
    }
 }

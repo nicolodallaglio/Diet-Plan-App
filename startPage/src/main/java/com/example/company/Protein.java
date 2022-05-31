@@ -12,53 +12,54 @@ public class Protein extends BaseMeal{
 
     public StringBuilder calculatePortion(PersonPrototype personPrototype){
         float bmi = personPrototype.BmiCalculated();
-        //System.out.println("proteine del giorno :");
         StringBuilder sb = new StringBuilder();
+        sb.append("\n-proteine del giorno: ");
         sb.append(chooseFood());
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) ((personPrototype.getWeight()*0.0008*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) ((personPrototype.getWeight()*0.0009*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }else if ((bmi >= 18.51) && (bmi < 25)){
             portion =  (float) ((personPrototype.getWeight()*0.0012*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
             portion =  (float) ((personPrototype.getWeight()*0.0015*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
             portion =  (float) ((personPrototype.getWeight()*0.002*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion );
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }
         return sb;
     }
     public StringBuilder calculatePortion(WomenPerson womenPerson){
         float bmi = womenPerson.BmiCalculated();
-       // System.out.println("proteine del giorno :");
+
         StringBuilder sb = new StringBuilder();
+        sb.append("\n-proteine del giorno: ");
         sb.append(chooseFood());
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) ((womenPerson.getWeight()*0.0008*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) ((womenPerson.getWeight()*0.0009*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata " + Math.ceil(portion));
         }else if ((bmi >= 18.51) && (bmi < 25)){
             portion =  (float) ((womenPerson.getWeight()*0.0012*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
             portion =  (float) ((womenPerson.getWeight()*0.0015*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
             portion =  (float) ((womenPerson.getWeight()*0.002*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion );
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }
         return sb;
     }
@@ -66,25 +67,26 @@ public class Protein extends BaseMeal{
     public StringBuilder calculatePortion(MenPerson menPerson){
         float bmi = menPerson.BmiCalculated();
         StringBuilder sb = new StringBuilder();
+        sb.append("\n-proteine del giorno: ");
         sb.append(chooseFood());
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) ((menPerson.getWeight()*0.0008*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }else if ((bmi >= 25.01) || (bmi < 30)){
             portion =  (float) ((menPerson.getWeight()*0.0009*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }else if ((bmi >= 18.51) || (bmi < 25)){
             portion =  (float) ((menPerson.getWeight()*0.0012*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 17.51) || (bmi < 18.50)){
             portion =  (float) ((menPerson.getWeight()*0.0015*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion);
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
 
         }else if ((bmi >= 16.01) || (bmi < 17.50)) {
             portion =  (float) ((menPerson.getWeight()*0.002*1000)/2.2);
-            sb.append("grammi da mangiare durante la giornata " + portion );
+            sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));
         }
         return sb;
     }

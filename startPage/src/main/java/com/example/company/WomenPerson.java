@@ -61,26 +61,22 @@ public class WomenPerson extends PersonPrototype implements IPerson{
     @Override
     public StringBuilder showShortMenu(Fat fat, carbohydrates carbohydrates, Protein protein) {
         //super.showShortMenu(fat, carbohydrates, protein);
-        StringBuilder sb = new StringBuilder();
         FruitDecorator fruitDecorator = new FruitDecorator(null);
         MealRecipe mealRecipe = new MealRecipe(protein, carbohydrates, fat);
         VegetableDecorator vegetableDecorator = new VegetableDecorator(null);
         TypesOfCooking typesOfCooking = new TypesOfCooking();
         BreakfastRecipe breakfastRecipe = new BreakfastRecipe();
-        for (int i = 0; i < 7; i++) {
-            System.out.println("\ngiorno " + (i + 1) + " della dieta");
-            sb.append("Colazione: ").append(breakfastRecipe.Breakfast());
-            sb.append(fruitDecorator.showFruit());
-            sb.append(mealRecipe.PricipleMeal(this));
-            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
-            sb.append(vegetableDecorator.showVegetable());
-            sb.append(fruitDecorator.showFruit());
-            sb.append(mealRecipe.PricipleMeal(this));
-            sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
-            sb.append(vegetableDecorator.showVegetable());
-
-        }
-
+        StringBuilder sb = new StringBuilder();
+        sb.append("MENU' DEL GIORNO\n");
+        sb.append("\n1) Colazione: ").append(breakfastRecipe.Breakfast());
+        sb.append(fruitDecorator.showFruit());
+        sb.append("\n2) Pranzo:\n").append(mealRecipe.PricipleMeal(this));
+        sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+        sb.append(vegetableDecorator.showVegetable());
+        sb.append(fruitDecorator.showFruit());
+        sb.append("\n3) Cena:\n ").append(mealRecipe.PricipleMeal(this));
+        sb.append("\nTipo di cottura: ").append(typesOfCooking.TypesOfCookingFunction());
+        sb.append(vegetableDecorator.showVegetable());
         return sb;
     }
 }
