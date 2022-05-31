@@ -25,14 +25,8 @@ public class VegetableDecorator extends MealDecorator{
 
         StringBuilder sb = new StringBuilder();
 
-        int n = (int) (Math.random() * 11);
-        int i = 0;
-        for(Alimenti alimento : verdure) {
-            i++;
-            if (i == n) {
-                sb.append(alimento.getName());
-            }
-        }
+        int n = (int) (Math.random() * verdure.size());
+        sb.append(verdure.get(n).getName());
         datasource.close();
         return sb;
     }

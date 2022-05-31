@@ -23,21 +23,15 @@ public class FruitDecorator extends MealDecorator{
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        int n = (int) (Math.random() * 5);
-        int i = 0;
-        for(Alimenti alimento : frutta) {
-            i++;
-            if (i == n) {
-                sb.append(alimento.getName());
-            }
-        }
+        int n = (int) (Math.random() * frutta.size());
+        sb.append(frutta.get(n).getName());
         datasource.close();
         return sb;
     }
 
     public StringBuilder showFruit(){
         StringBuilder sb = new StringBuilder();
-        sb.append("\nSpuntino: ").append(chooseFood());
+        sb.append("\n Spuntino: ").append(chooseFood());
         return sb;
     }
 }

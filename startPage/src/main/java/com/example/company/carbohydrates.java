@@ -157,14 +157,8 @@ public class carbohydrates extends BaseMeal{
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        int n = (int) (Math.random() * 10);
-        int i = 1;
-        for(Alimenti alimento : carboidrati) {
-            i++;
-            if (i == n) {
-                sb.append(alimento.getName());
-            }
-        }
+        int n = (int) (Math.random() * carboidrati.size());
+        sb.append(carboidrati.get(n).getName());
 
         datasource.close();
         return sb;
