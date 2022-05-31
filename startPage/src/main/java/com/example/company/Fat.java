@@ -63,14 +63,8 @@ public class Fat extends BaseMeal{
         }
 
         StringBuilder sb = new StringBuilder();
-        int n = (int) (Math.random() * 8);
-        int i = 0;
-        for(Alimenti alimento : grassi) {
-            i++;
-            if (i == n) {
-               sb.append(alimento.getName());
-            }
-        }
+        int n = (int) (Math.random() * grassi.size());
+        sb.append(grassi.get(n).getName());
         datasource.close();
         return sb;
     }

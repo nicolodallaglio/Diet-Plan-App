@@ -106,14 +106,8 @@ public class Protein extends BaseMeal{
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        int n = (int) (Math.random() * 5);
-        int i = 0;
-        for(Alimenti alimento : proteine) {
-            i++;
-            if (i == n) {
-                sb.append(alimento.getName());
-            }
-        }
+        int n = (int) (Math.random() * proteine.size());
+        sb.append(proteine.get(n).getName());
 
         datasource.close();
         return sb;
