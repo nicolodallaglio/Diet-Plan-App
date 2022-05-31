@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1" />
+    <list default="true" id="3ce03334-6940-44e9-a1c5-21bf7f286614" name="Changes" comment="1.1">
+      <change afterPath="$PROJECT_DIR$/.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ciao.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/company/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller1.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/day-1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller1.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/day-1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/day-1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage/com/example/startpage",
-    "last_opened_file_path": "C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/resources/com/example/startpage",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/java/com/example/startpage/com/example/startpage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dalla/IdeaProjects/progDieta/startPage/src/main/resources/com/example/startpage&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dalla\IdeaProjects\progDieta\startPage\src\main\resources\com\example\startpage" />
@@ -261,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653957405192</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.1">
+      <created>1653958296768</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1653958296768</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

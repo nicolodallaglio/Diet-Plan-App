@@ -15,7 +15,7 @@ public class Protein extends BaseMeal{
         StringBuilder sb = new StringBuilder();
         sb.append("\n-proteine del giorno: ");
         sb.append(chooseFood());
-        float portion = 0;
+        float portion;
         if (bmi > 30.01){
             portion =  (float) ((personPrototype.getWeight()*0.0008*1000)/2.2);
             sb.append(" ,grammi da mangiare durante la giornata ").append(Math.ceil(portion));

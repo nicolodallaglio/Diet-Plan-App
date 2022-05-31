@@ -10,7 +10,6 @@ module com.example.startpage {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.sql;
-    requires progDieta;
 
     opens com.example.startpage to javafx.fxml;
     exports com.example.startpage;

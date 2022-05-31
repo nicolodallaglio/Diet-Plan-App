@@ -32,8 +32,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-                  <MenuItem mnemonicParsing="false" text="Scarica il file" />
+              <MenuItem fx:id="closeDay1" mnemonicParsing="false" onAction="#exitDay1" text="Close" />
+                  <MenuItem fx:id="scaricaFile" mnemonicParsing="false" onAction="#download" text="Scarica il file" />
             </items>
           </Menu>
         </menus>
