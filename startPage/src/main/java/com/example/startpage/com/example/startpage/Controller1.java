@@ -80,12 +80,6 @@ public class Controller1 implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        /*
-        Stage stage = (Stage) indietro3.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
-         */
     }
 
     public void exitDay1(ActionEvent actionEvent) throws IOException {
