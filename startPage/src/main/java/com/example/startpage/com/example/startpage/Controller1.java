@@ -2,13 +2,16 @@ package com.example.startpage;
 
 import com.example.company.*;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -19,6 +22,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import static com.example.startpage.Controller.*;
 
 public class Controller1 implements Initializable {
 
@@ -59,11 +64,28 @@ public class Controller1 implements Initializable {
         }
     }
 
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
     public void back3(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("showMenu.fxml"));
+        root = loader.load();
+
+        Controller2 scene3Controller = loader.getController();
+        scene3Controller.showBodyFat(nome,peso,altezza,eta,sesso,attivita);
+
+        //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        /*
         Stage stage = (Stage) indietro3.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("showMenu.fxml"));
         stage.setTitle("");
         stage.setScene(new Scene(root));
+         */
     }
 
     public void exitDay1(ActionEvent actionEvent) throws IOException {

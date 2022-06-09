@@ -19,7 +19,7 @@ public class BreakfastRecipe implements IBreakfast {
         }else if(n == 6){
             return("Toast integrale o ai 5 cereali con prosciutto crudo DOP + un frutto a piacere + una manciata di frutta secca");
         }else if(n == 7){
-            return("cappucino e brioche");
+            return("Cappuccino e brioche");
         }
         return null;
     }
