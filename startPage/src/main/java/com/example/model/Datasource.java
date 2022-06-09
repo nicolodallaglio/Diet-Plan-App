@@ -4,6 +4,7 @@ import com.example.model.Alimenti;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
     public class Datasource {
@@ -88,9 +89,11 @@ import java.util.List;
                     statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('null','mela','frutta','100','0','0','0')");
                     statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('null','succo di arancia','frutta','137','8.2','0','0')");
                     statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','marmellata di frutta fresca','frutta','278','60','','0')");
-                    statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','pera','frutta','57','15','0','80')");
-                    statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','arancia','frutta','45','10','0','80')");
-
+                    statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','pera','frutta','57','15','0','0')");
+                    statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','arancia','frutta','45','0','0','0')");
+                statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','fragole','frutta','32','7','0','1')");
+                statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','kiwi','frutta','61','14','23','1')");
+                statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','pesca','frutta','9','0','0','39')");
 
                 return true;
 
