@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="720.0" maxWidth="1080.0" onMouseMoved="#mostraData" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller">
+<AnchorPane maxHeight="720.0" maxWidth="1080.0" onMouseMoved="#mostraData" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.startpage.Controller2">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true">
          <image>
@@ -30,8 +31,12 @@
         </content>
       </ScrollPane>
       <TextField fx:id="nomeNewAlim" layoutX="678.0" layoutY="592.0" prefHeight="25.0" prefWidth="175.0" promptText="nome alimento" />
-      <TextField fx:id="calNewAlim" layoutX="678.0" layoutY="664.0" prefHeight="25.0" prefWidth="175.0" promptText="calorie per 100 grammi" />
-      <TextField fx:id="tipoNewAlim" layoutX="678.0" layoutY="629.0" prefHeight="25.0" prefWidth="175.0" promptText="pro/cho/fat" />
-      <Button fx:id="newAlimento1" layoutX="870.0" layoutY="638.0" mnemonicParsing="false" onAction="#addAlimento" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: azure;" text="Rimuovi alimento" />
+      <TextField fx:id="calNewAlim" layoutX="678.0" layoutY="664.0" prefHeight="25.0" prefWidth="175.0" promptText="calorie per 100g" />
+      <TextField fx:id="tipoNewAlim" layoutX="678.0" layoutY="629.0" prefHeight="25.0" prefWidth="175.0" promptText="tipo: pro/cho/fat" />
+      <Button fx:id="newAlimento1" layoutX="870.0" layoutY="638.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: azure;" text="Rimuovi alimento" />
+      <Label fx:id="errorLabelA" layoutX="904.0" layoutY="677.0" prefHeight="25.0" prefWidth="72.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </AnchorPane>

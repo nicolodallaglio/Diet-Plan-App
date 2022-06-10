@@ -14,7 +14,7 @@ public class Fat extends BaseMeal{
         StringBuilder sb= new StringBuilder();
         sb.append("grassi del giorno prototipo:").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append(" grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+        sb.append(" ,grammi da mangiare ").append(Math.ceil(portion/2));
         return sb;
     }
 
@@ -22,14 +22,14 @@ public class Fat extends BaseMeal{
         StringBuilder sb= new StringBuilder();
         sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+        sb.append(" ,grammi da mangiare ").append(Math.ceil(portion/2));
         return sb;
     }
     public StringBuilder calculatePortion(SportyWomen personPrototype){
         StringBuilder sb= new StringBuilder();
         sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+        sb.append(" ,grammi da mangiare ").append(Math.ceil(portion/2));
         return sb;
     }
 
@@ -37,7 +37,7 @@ public class Fat extends BaseMeal{
         StringBuilder sb= new StringBuilder();
         sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+        sb.append(" ,grammi da mangiare ").append(Math.ceil(portion/2));
         return sb;
     }
 
@@ -45,7 +45,7 @@ public class Fat extends BaseMeal{
         StringBuilder sb= new StringBuilder();
         sb.append("-fonte di grassi: ").append(chooseFood());
         float portion = (float) (personPrototype.getWeight()*0.00005*1000);
-        sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+        sb.append(" ,grammi da mangiare ").append(Math.ceil(portion/2));
         return sb;
     }
 
@@ -114,18 +114,9 @@ public class Fat extends BaseMeal{
         }
 
         StringBuilder sb= new StringBuilder();
-        int n = (int) (Math.random() * 8);
-        int i = 0;
-        for(Alimenti alimento : grassi) {
-            i++;
-            if (i == n) {
-                if (alimento.getName().equalsIgnoreCase("burro")){
-                    sb.append("olio di oliva");
-                }else{
-                    sb.append(alimento.getName());
-                }
-            }
-        }
+        int n = (int) (Math.random() * grassi.size()-1);
+        sb.append(grassi.get(n).getName()).append( " oppure ").append(grassi.get(n+1).getName());
+
         datasource.close();
         return sb;
     }

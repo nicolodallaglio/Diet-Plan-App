@@ -18,21 +18,21 @@ public class carbohydrates extends BaseMeal{
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) (personPrototype.getWeight()*0.0008*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) (personPrototype.getWeight()*0.0009*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 18.51) && (bmi < 25)){
             portion =  (float) (personPrototype.getWeight()*0.001*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
             portion =  (float) (personPrototype.getWeight()*0.0014*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 16.01)&& (bmi < 17.50)) {
             portion =  (float) (personPrototype.getWeight()*0.0018*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }
         return sb;
     }
@@ -44,21 +44,21 @@ public class carbohydrates extends BaseMeal{
         float portion = 0;
             if (bmi > 30.01){
                 portion =  (float) (menPerson.getWeight()*0.0008*1000/2);
-                sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+                sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
             }else if ((bmi >= 25.01) && (bmi < 30)){
                 portion =  (float) (menPerson.getWeight()*0.0009*1000/2);
-                sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+                sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
             }else if ((bmi >= 18.51) && (bmi < 25)){
                 portion =  (float) (menPerson.getWeight()*0.001*1000/2);
-                sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+                sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
             }else if ((bmi >= 17.51) &&(bmi < 18.50)){
                 portion =  (float) (menPerson.getWeight()*0.0014*1000/2);
-                sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+                sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
             }else if ((bmi >= 16.01) && (bmi < 17.50)) {
                 portion =  (float) (menPerson.getWeight()*0.0018*1000/2);
-                sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+                sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
             }
         return sb;
         }
@@ -71,21 +71,21 @@ public class carbohydrates extends BaseMeal{
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) (sportyMen.getWeight()*0.0008*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) (sportyMen.getWeight()*0.0009*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 18.51) && (bmi < 25)){
             portion =  (float) (sportyMen.getWeight()*0.001*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 17.51) &&(bmi < 18.50)){
             portion =  (float) (sportyMen.getWeight()*0.0014*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
             portion =  (float) (sportyMen.getWeight()*0.0018*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }
         return sb;
     }
@@ -98,21 +98,21 @@ public class carbohydrates extends BaseMeal{
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) (womenPerson.getWeight()*0.0008*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) (womenPerson.getWeight()*0.0009*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 18.51) &&(bmi < 25)){
             portion =  (float) (womenPerson.getWeight()*0.001*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 17.51) &&(bmi < 18.50)){
             portion =  (float) (womenPerson.getWeight()*0.0014*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 16.01)&& (bmi < 17.50)) {
             portion =  (float) (womenPerson.getWeight()*0.0018*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }
         return sb;
     }
@@ -125,21 +125,21 @@ public class carbohydrates extends BaseMeal{
         float portion = 0;
         if (bmi > 30.01){
             portion =  (float) (sportyWomen.getWeight()*0.0008*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 25.01) && (bmi < 30)){
             portion =  (float) (sportyWomen.getWeight()*0.0009*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }else if ((bmi >= 18.51) && (bmi < 25)){
             portion =  (float) (sportyWomen.getWeight()*0.001*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 17.51) && (bmi < 18.50)){
             portion =  (float) (sportyWomen.getWeight()*0.0014*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
 
         }else if ((bmi >= 16.01) && (bmi < 17.50)) {
             portion =  (float) (sportyWomen.getWeight()*0.0018*1000/2);
-            sb.append(", grammi da mangiare durante la giornata ").append(Math.ceil(portion));
+            sb.append(", grammi da mangiare ").append(Math.ceil(portion/2));
         }
         return sb;
     }
@@ -157,8 +157,8 @@ public class carbohydrates extends BaseMeal{
             return null;
         }
         StringBuilder sb = new StringBuilder();
-        int n = (int) (Math.random() * carboidrati.size());
-        sb.append(carboidrati.get(n).getName());
+        int n = (int) (Math.random() * carboidrati.size()-1);
+        sb.append(carboidrati.get(n).getName()).append( " oppure ").append(carboidrati.get(n+1).getName());
 
         datasource.close();
         return sb;

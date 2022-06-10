@@ -17,10 +17,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.ScrollPane;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -30,6 +27,8 @@ import java.net.URL;
 import java.util.List;
 import java.util.Objects;
 import java.util.ResourceBundle;
+
+import static com.example.startpage.Controller.*;
 
 public class Controller2 implements Initializable {
 
@@ -78,12 +77,6 @@ public class Controller2 implements Initializable {
     @FXML
     private Button anchorPane3;
 
-    private static String nome1 = "";
-    private static float altezza1;
-    private static int peso1;
-    private static int eta1 = 0;
-    private static String sesso1= "";
-    private static String attivita1 = "";
 
     public void showBodyFat(String nome, int peso, float altezza, int eta, String sesso, String attivita)  {
         mainMenuText.setText("Eccoci nel menu principale, " + nome + "!\n"+ "Troverai i pasti per tutta la settimana"+ "\n" + "e ulteriori informazioni utili.");
@@ -149,6 +142,7 @@ public class Controller2 implements Initializable {
         stage.show();
     }
 
+    StringBuilder sbA= new StringBuilder();
     public void mostraData(MouseEvent mouseEvent) throws IOException {
 
         scrollAlim.setPannable(true);
@@ -163,41 +157,76 @@ public class Controller2 implements Initializable {
             return;
         }
 
-        StringBuilder sb= new StringBuilder();
         for (Alimenti alimento : alimenti) {
-            sb.append(alimento.getName().toUpperCase()).append(", calorie= ").append(alimento.getCalorie());
-            sb.append("\n");
+            sbA.append(alimento.getName().toUpperCase()).append(", calorie= ").append(alimento.getCalorie());
+            sbA.append("\n");
         }
 
         scrollAlim.setContent(textAlim);
-        textAlim.setText(sb.toString());
+        textAlim.setText(sbA.toString());
     }
 
-    public void addAlimento(ActionEvent actionEvent) throws IOException {
+    @FXML
+    private TextField nomeNewAlim;
+    @FXML
+    private TextField tipoNewAlim;
+    @FXML
+    private TextField calNewAlim;
+    @FXML
+    private Label errorLabelA;
 
+    public void addAlimento(MouseEvent actionEvent) throws IOException {
+        String nomeA;
+        String tipoA;
+        int calorieA;
+        try {
+            nomeA = nomeNewAlim.getText();
+            tipoA = tipoNewAlim.getText();
+            calorieA = Integer.parseInt(calNewAlim.getText());
+            errorLabelA.setText("");
+            switch (tipoA) {
+                case "cho":
+                    tipoA = "carboidrato";
+                    break;
+                case "pro":
+                    tipoA = "proteina";
+                    break;
+                case "fat":
+                    tipoA = "grassi";
+                    break;
+            }
+            sbA.append(nomeA.toUpperCase()).append(", calorie= ").append(calorieA);
+            sbA.append("\n");
+           // mostraData(actionEvent);
+        } catch (Exception e) {
+            errorLabelA.setText("ERROR");
+        }
     }
 
     public void back2(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) indietro2.getScene().getWindow();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("showMenu.fxml")));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
-    }
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("showMenu.fxml"));
+        Parent root = loader.load();
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+        Controller2 scene3Controller = loader.getController();
+        scene3Controller.showBodyFat(nome,peso,altezza,eta,sesso,attivita);
+
+        //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
     public void next1(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("day-1.fxml"));
-        root = loader.load();
+        Parent root = loader.load();
 
         Controller1 scene2Controller = loader.getController();
-        scene2Controller.method1(nome1,peso1,altezza1,eta1,sesso1,attivita1);
+        scene2Controller.method1(nome,peso,altezza,eta,sesso,attivita);
 
         //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
