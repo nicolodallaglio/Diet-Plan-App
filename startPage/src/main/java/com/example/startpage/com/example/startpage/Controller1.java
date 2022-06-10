@@ -65,19 +65,16 @@ public class Controller1 implements Initializable {
     }
 
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
     public void back3(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("showMenu.fxml"));
-        root = loader.load();
+        Parent root = loader.load();
 
         Controller2 scene3Controller = loader.getController();
         scene3Controller.showBodyFat(nome,peso,altezza,eta,sesso,attivita);
 
         //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
