@@ -2,6 +2,7 @@ package com.example.model;
 
 import com.example.model.Alimenti;
 
+import java.net.SocketOption;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -20,7 +21,6 @@ public class Datasource {
     public static final String COLUMN_CHO = "cho";
 
     private Connection conn;
-
 
     public boolean open() {
         try {
@@ -102,11 +102,7 @@ public class Datasource {
         }
     }
 
-    public void inserimentoAlimento(String nomeA, String tipoA, int calorieA) throws SQLException {
-        conn = DriverManager.getConnection(CONNECTION_STRING);
-        Statement statement = conn.createStatement();
-        statement.execute("INSERT INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES ('NULL','"+nomeA+"','"+tipoA+"','"+calorieA+"','0','0','')");
-    }
+
 
     public void close() {
         try {
@@ -117,6 +113,19 @@ public class Datasource {
             System.out.println("Non riesco a chiudere la connessione al database: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+
+    public List<Alimenti> inserimentoAlimento(String nomeA, String tipoA, String calorieA) throws SQLException {
+        open();
+        List<Alimenti> nuova = new ArrayList<>();
+        nuova.addAll(queryAlimenti());
+        Alimenti alimento = new Alimenti();
+        alimento.setName(nomeA);
+        alimento.setTipo(tipoA);
+        alimento.setCalorie(Integer.parseInt(calorieA));
+        nuova.add(alimento);
+        return nuova;
     }
 
     //metodo che restituisce la lista degli ingredienti

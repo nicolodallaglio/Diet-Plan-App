@@ -41,10 +41,6 @@ public class Controller2 implements Initializable {
     @FXML
     private MenuBar showMenuBar;
     @FXML
-    private ScrollPane scrollAlim;
-    @FXML
-    private Text textAlim;
-    @FXML
     private Button indietro2;
     @FXML
     private Button indietro4;
@@ -135,87 +131,19 @@ public class Controller2 implements Initializable {
     }
 
     public void mostraAlimenti(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) showMenuBar.getScene().getWindow();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("showAlimenti.fxml")));
-        stage.setTitle("");
-        stage.setScene(new Scene(root));
-        stage.show();
-    }
-
-    StringBuilder sbA= new StringBuilder();
-    public void mostraData(MouseEvent mouseEvent) throws IOException {
-
-        scrollAlim.setPannable(true);
-        com.example.model.Datasource datasource = new Datasource();
-        if (!datasource.open()) {
-            System.out.println("Non riesco ad aprire datasource");
-            return;
-        }
-        List<Alimenti> alimenti = datasource.queryAlimenti();
-        if (alimenti == null) {
-            textAlim.setText("Nessun alimento");
-            return;
-        }
-
-        for (Alimenti alimento : alimenti) {
-            sbA.append(alimento.getName().toUpperCase()).append(", calorie= ").append(alimento.getCalorie());
-            sbA.append("\n");
-        }
-
-        scrollAlim.setContent(textAlim);
-        textAlim.setText(sbA.toString());
-    }
-
-    @FXML
-    private TextField nomeNewAlim;
-    @FXML
-    private TextField tipoNewAlim;
-    @FXML
-    private TextField calNewAlim;
-    @FXML
-    private Label errorLabelA;
-
-    public void addAlimento(MouseEvent actionEvent) throws IOException {
-        String nomeA;
-        String tipoA;
-        int calorieA;
-        try {
-            nomeA = nomeNewAlim.getText();
-            tipoA = tipoNewAlim.getText();
-            calorieA = Integer.parseInt(calNewAlim.getText());
-            errorLabelA.setText("");
-            switch (tipoA) {
-                case "cho":
-                    tipoA = "carboidrato";
-                    break;
-                case "pro":
-                    tipoA = "proteina";
-                    break;
-                case "fat":
-                    tipoA = "grassi";
-                    break;
-            }
-            sbA.append(nomeA.toUpperCase()).append(", calorie= ").append(calorieA);
-            sbA.append("\n");
-           // mostraData(actionEvent);
-        } catch (Exception e) {
-            errorLabelA.setText("ERROR");
-        }
-    }
-
-    public void back2(ActionEvent actionEvent) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("showMenu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("showAlimenti.fxml"));
         Parent root = loader.load();
 
-        Controller2 scene3Controller = loader.getController();
-        scene3Controller.showBodyFat(nome,peso,altezza,eta,sesso,attivita);
+        Controller3 scene4Controller = loader.getController();
+        scene4Controller.mostraData();
 
         //root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
-        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Stage stage = (Stage) mainMenuText.getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
 
     public void next1(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("day-1.fxml"));
