@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="234f0d8c-3c8c-45f5-b265-c0ad2684149f" name="Changes" comment="1.2">
-      <change afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Datasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Datasource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller2.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showAlimenti.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showAlimenti.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Fat.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Fat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/Protein.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/company/carbohydrates.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/company/carbohydrates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/model/Datasource.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/model/Datasource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller1.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller2.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/Controller2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showAlimenti.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showAlimenti.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,8 +116,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.com.example.startpage.MainApplication" />
-      <item itemvalue="Application.com.example.company.Main" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.com.example.company.Main" />
     </list>
     <recent_temporary>
       <list>
@@ -357,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654857421090</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="1.2">
+      <created>1655066009310</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1655066009310</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
