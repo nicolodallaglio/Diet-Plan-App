@@ -1,6 +1,7 @@
 package com.example.model;
 
 import com.example.model.Alimenti;
+import com.example.startpage.Controller2;
 
 import java.net.SocketOption;
 import java.sql.*;
@@ -20,15 +21,15 @@ public class Datasource {
     public static final String COLUMN_FATS = "fats";
     public static final String COLUMN_CHO = "cho";
 
-    private Connection conn;
-    private Statement statement;
+    Connection conn;
+
     public boolean open() {
         try {
             conn = DriverManager.getConnection(CONNECTION_STRING);
 
-             statement = conn.createStatement();
+            Statement statement = conn.createStatement();
 
-           // statement.execute("DROP TABLE IF EXISTS " + TABLE_ALIMENTI);
+            // statement.execute("DROP TABLE IF EXISTS " + TABLE_ALIMENTI);
 
             //tabella ALIMENTI   colonne: ID+NAME+TIPO+CALORIE+CHO+PROTE+FATS
             statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_ALIMENTI + " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_NAME + " text UNIQUE," + COLUMN_TIPO + " text," + COLUMN_CALORIE + " integer," + COLUMN_CHO + " float," + COLUMN_PROTE + " integer," + COLUMN_FATS + " integer" + ")");
@@ -116,16 +117,22 @@ public class Datasource {
     }
 
 
-    public List<Alimenti> inserimentoAlimento(String nomeA, String tipoA, String calorieA) throws SQLException {
-        open();
-        List<Alimenti> nuova = new ArrayList<>();
-        nuova.addAll(queryAlimenti());
-        Alimenti alimento = new Alimenti();
-        alimento.setName(nomeA);
-        alimento.setTipo(tipoA);
-        alimento.setCalorie(Integer.parseInt(calorieA));
-        nuova.add(alimento);
-        return nuova;
+    public void inserimentoAlimento(String nomeA, String tipoA, String calorieA) throws SQLException {
+        try(Statement statement = conn.createStatement();) {
+            statement.execute("INSERT OR IGNORE INTO " + TABLE_ALIMENTI + " (" + COLUMN_ID + "," + COLUMN_NAME + "," + COLUMN_TIPO + "," + COLUMN_CALORIE + "," + COLUMN_CHO + "," + COLUMN_PROTE + "," + COLUMN_FATS + ")" + "VALUES (NULL,'"+nomeA+"','"+tipoA+"','"+calorieA+"','0','0','39')");
+        } catch (SQLException e) {
+            System.out.println("inserimento ingredienti fallita");
+        }
+
+    }
+
+    public void eliminaAlimento(String nome) throws SQLException {
+        try(Statement statement = conn.createStatement();) {
+            statement.execute("DELETE FROM " + TABLE_ALIMENTI + " WHERE name LIKE '%" + nome + "%';");
+        } catch (SQLException e) {
+            System.out.println("eliminazione ingredienti fallita");
+        }
+
     }
 
     //metodo che restituisce la lista degli ingredienti

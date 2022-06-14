@@ -87,18 +87,37 @@ public class Controller3 implements Initializable {
             }
 
             Datasource datasource = new Datasource();
-            List<Alimenti> nuovi = datasource.inserimentoAlimento(nomeA,tipoA,calorieA);
 
-            for (Alimenti alimento : nuovi) {
-                sbA.append(alimento.getName().toUpperCase()).append(", calorie= ").append(alimento.getCalorie());
-                sbA.append("\n");
-            }
-            textAlim.setText(sbA.toString());
+            datasource.open();
+            datasource.inserimentoAlimento(nomeA,tipoA,calorieA);
+            mostraData();
+        } catch (Exception e) {
+            errorLabelA.setText("ERROR");
+            e.printStackTrace();
+
+        }
+
+    }
+
+    public void deleteAlimento(ActionEvent actionEvent) throws IOException {
+        String nome = "";
+        try {
+            nome = nomeNewAlim.getText();
+            errorLabelA.setText("");
+
+            Datasource datasource = new Datasource();
+            datasource.open();
+            datasource.eliminaAlimento(nome.toUpperCase());
+            mostraData();
+
         } catch (Exception e) {
             errorLabelA.setText("ERROR");
             e.printStackTrace();
         }
+
     }
+
+
 
     public void back2(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("showMenu.fxml"));

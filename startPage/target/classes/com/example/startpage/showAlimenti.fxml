@@ -33,7 +33,7 @@
       <TextField fx:id="nomeNewAlim" layoutX="678.0" layoutY="592.0" prefHeight="25.0" prefWidth="175.0" promptText="nome alimento" />
       <TextField fx:id="calNewAlim" layoutX="678.0" layoutY="664.0" prefHeight="25.0" prefWidth="175.0" promptText="calorie per 100g" />
       <TextField fx:id="tipoNewAlim" layoutX="678.0" layoutY="629.0" prefHeight="25.0" prefWidth="175.0" promptText="tipo: pro/cho/fat" />
-      <Button fx:id="newAlimento1" layoutX="870.0" layoutY="638.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: azure;" text="Rimuovi alimento" />
+      <Button fx:id="newAlimento1" layoutX="870.0" layoutY="638.0" mnemonicParsing="false" onAction="#deleteAlimento" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: azure;" text="Rimuovi alimento" />
       <Label fx:id="errorLabelA" layoutX="904.0" layoutY="677.0" prefHeight="25.0" prefWidth="72.0" textFill="RED">
          <font>
             <Font size="14.0" />

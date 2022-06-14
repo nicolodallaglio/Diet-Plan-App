@@ -94,7 +94,7 @@ public class Controller implements Initializable {
             }
             if(!sporty.getText().equals("Sì") && !sporty.getText().equals("No")){
                 throw new Exception();
-            };
+            }
         } catch (Exception e) {
             errorLabel.setText("ERROR:" + "inserire correttamente i dati");
             getInput(actionEvent);

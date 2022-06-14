@@ -27,16 +27,6 @@
               <MenuItem fx:id="close" mnemonicParsing="false" onAction="#closeMenu" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Chi siamo" />
-            </items>
-          </Menu>
         </menus>
       </MenuBar>
       <Label fx:id="bodyPer" layoutX="35.0" layoutY="160.0" prefHeight="163.0" prefWidth="444.0" textFill="WHITE">

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="234f0d8c-3c8c-45f5-b265-c0ad2684149f" name="Changes" comment="1.2" />
+    <list default="true" id="234f0d8c-3c8c-45f5-b265-c0ad2684149f" name="Changes" comment="1.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Datasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/model/Datasource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller3.java" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/java/com/example/startpage/com/example/startpage/Controller3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showAlimenti.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showAlimenti.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/src/main/resources/com/example/startpage/showMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/model/Datasource.class" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/model/Datasource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showAlimenti.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/startPage/target/classes/com/example/startpage/showAlimenti.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655199391095</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="1.2">
+      <created>1655213622436</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1655213622436</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
