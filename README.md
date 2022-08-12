@@ -1,5 +1,6 @@
 # Diet-Plan-App
 A desktop application capable of providing a weekly diet for the consumer. First project ever done, completely in Java for a university exam.
+
 ![d92ce541-f6da-4fc3-bc32-ab76b038518c](https://user-images.githubusercontent.com/64795037/184342575-6b7b6805-2c8b-4695-96ec-90c80a9d9ec6.jpg)
 ![27c839a0-a2cb-45d0-b05d-69232a66a8ef](https://user-images.githubusercontent.com/64795037/184342594-2d169fa5-47e0-40ca-809f-35c135fb9cd9.jpg)
 ![446a7879-bf85-402e-9699-8d196edb77c8](https://user-images.githubusercontent.com/64795037/184342606-ad1e5522-3095-4df6-bb6d-836c3a9604f4.jpg)
